@@ -13,10 +13,14 @@ p:last-child {
   margin-bottom: 0;
 }
 
-ul {
+.list {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+
+.link {
+  text-decoration: none;
 }
 
 a {
@@ -33,3 +37,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+input {
+  display: block;
+}
+
+

@@ -9,17 +9,53 @@
 @import url('./header.css');
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
+  /* Colors */
+
+  --first-color: #ae1332;
+  --second-color: #ffffff;
+  --third-color: #000000;
+  --fourth-color: #a4cb66;
+  --fifth-color: #f5ce13;
+
+  /* Font */
+
+  --primary-font: 'DM Sans', sans-serif;
+}
+
+body {
+  font-family: var(--primary-font);
+  font-style: normal;
   font-weight: 400;
+  font-size: 11px;
+  line-height: 1.29;
+  letter-spacing: -0.04em;
+  background-color: var(--first-color);
+  color: var(--second-color);
+}
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+.container {
+  min-width: 320px;
+  max-width: 375px;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  margin-right: auto;
+  margin-left: auto;
+
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+
+    padding-left: 33px;
+    padding-right: 33px;
+  }
 }

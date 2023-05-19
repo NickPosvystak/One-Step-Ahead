@@ -1,17 +1,3 @@
-:root {
-    /* Colors */
-
-    --first-color: #ae1332;
-    --second-color: #ffffff;
-    --third-color: #000000;
-    --fourth-color: #a4cb66;
-    --fifth-color: #f5ce13;
-
-    /* Font */
-
-    --primary-font: 'DM Sans', sans-serif;
-}
-
 .fruits-title{
     margin-bottom: 14px;
 

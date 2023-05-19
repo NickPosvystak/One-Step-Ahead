@@ -1,0 +1,155 @@
+:root {
+    /* Colors */
+
+    --first-color: #ae1332;
+    --second-color: #ffffff;
+    --third-color: #000000;
+    --fourth-color: #a4cb66;
+    --fifth-color: #f5ce13;
+
+    /* Font */
+
+    --primary-font: 'DM Sans', sans-serif;
+}
+
+
+
+.contacts-title {
+    position: relative;
+    top: 43px;
+    width: 335px;
+    margin-right: auto;
+    margin-left: auto;
+
+
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1;
+    letter-spacing: -0.04em;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+
+}
+
+
+@media only screen and (min-width:768px) {
+    .contacts-title {
+        font-size: 54px;
+        width: 648px;
+        top: 30px;
+
+    }
+}
+
+@media only screen and (min-width:1280px) {
+    .contacts-title {
+        font-size: 64px;
+        width: 740px;
+        top: 40px;
+
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .blub-item {
+        display: none;
+    }
+}
+
+.contacts-paragraph {
+    width: 492px;
+    font-size: 14px;
+    letter-spacing: -0.04em;
+    margin-bottom: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+@media only screen and (max-width:768px) {
+    .contacts-paragraph {
+        display: none;
+    }
+}
+
+
+.contact-sub-form {
+    margin-bottom: 80px;
+    position: relative;
+
+
+
+}
+
+@media only screen and (max-width:768px) {
+    .contact-sub-form {
+        display: none;
+    }
+}
+
+
+.contacts-email {
+
+    display: block;
+    width: 292px;
+    height: 48px;
+
+    opacity: 0.9;
+    border: 1px solid #FFFFFF;
+    border-radius: 100px;
+    padding: 15px 104px 15px 24px;
+    background-color: var(--first-color);
+    color: var(--second-color);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contacts-sub-btn {
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: calc(50% - 51px - 95px);
+
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.3;
+
+    letter-spacing: -0.04em;
+    text-transform: capitalize;
+
+    width: 102px;
+    height: 48px;
+    background-color: var(--fourth-color);
+    border-radius: 100px;
+    border: 1px solid var(--fourth-color);
+    color: var(--second-color);
+}
+
+
+.contacts-fruit-list {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 80px;
+    --items: 1;
+}
+
+@media only screen and (min-width: 768px) {
+    .contacts-fruit-list {
+        --items: 2;
+    }
+}
+
+.contacts-fruit-img {
+    background-color: var(--first-color);
+    border-radius: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.contacts-fruit-item {
+    margin-right: auto;
+    margin-left: auto;
+}

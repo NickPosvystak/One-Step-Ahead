@@ -7,6 +7,9 @@
 @import url('./reset.css');
 
 
+@import url('./header.css');
+@import url('./contacts.css');
+
 
 :root {
   /* Colors */
@@ -44,6 +47,7 @@ body {
   padding-right: 20px;
   padding-bottom: 80px;
 }
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -52,6 +56,7 @@ body {
     padding-right: 32px;
   }
 }
+
 @media screen and (min-width: 1280px) {
   .container {
     max-width: 1280px;

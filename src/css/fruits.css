@@ -145,6 +145,7 @@
 }
 .fruits-list-price{
     width: max-content;
+    margin-left: 4px;
     height: 48px;
     padding: 12px 21px;
     font-weight: 500;
@@ -157,6 +158,8 @@
 }
 .fruits-item img {
     margin-bottom: 24px;
+    margin-right: auto;
+    margin-left: auto;
 }
 .img-boxshadow{
     position: absolute;
@@ -168,6 +171,16 @@
     mix-blend-mode: normal;
     opacity: 0.1;
     filter: blur(13.5914px);
+}
+@media screen and (min-width:768px) {
+    .img-boxshadow{
+        left: 75px;
+    }
+}
+@media screen and (min-width:1280px) {
+    .img-boxshadow {
+        left: 90px;
+    }
 }
 .fruits-order-button{
     display: block;

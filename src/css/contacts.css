@@ -58,13 +58,9 @@
     }
 }
 
-
 .contact-sub-form {
     margin-bottom: 80px;
     position: relative;
-
-
-
 }
 
 @media only screen and (max-width:768px) {
@@ -72,7 +68,6 @@
         display: none;
     }
 }
-
 
 .contacts-email {
 
@@ -88,12 +83,22 @@
     color: var(--second-color);
     margin-left: auto;
     margin-right: auto;
+    outline: 1px solid transparent;
+    outline-offset: -1px;
 }
 
+.contacts-email:not(:placeholder-shown):required:valid {
+    outline-color: transparent;
+}
+
+.contacts-email:not(:placeholder-shown):required:invalid {
+    outline-color: red;
+
+}
 
 .contacts-email::placeholder {
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: rgba(255, 255, 255, 0.5);
@@ -115,30 +120,23 @@
 
     width: 102px;
     height: 48px;
+    color: var(--second-color);
     background-color: var(--fourth-color);
     border-radius: 100px;
     border: 1px solid var(--fourth-color);
-    outline: 2px solid transparent;
-    outline-offset: -2px;
-    color: var(--second-color);
+    transition: font-size 250ms cubic-bezier(.03, .08, 1, .92);
 }
 
 
-.contacts-sub-btn:focus {
-    outline-color: var(--fifth-color);
+.contacts-sub-btn:focus,
+.contacts-sub-btn:hover {
+    font-size: 18px;
 }
 
 .contacts-fruit-list {
     display: flex;
     gap: 24px;
     margin-bottom: 80px;
-    --items: 1;
-}
-
-@media only screen and (min-width: 768px) {
-    .contacts-fruit-list {
-        --items: 2;
-    }
 }
 
 .contacts-fruit-img {

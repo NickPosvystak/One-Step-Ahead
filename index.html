@@ -1,33 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/One-Step-Ahead/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/One-Step-Ahead/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
 
-    <title>One Step Ahead</title>
-    
-    <script type="module" crossorigin src="/One-Step-Ahead/assets/index-fac82e35.js"></script>
-    <link rel="stylesheet" href="/One-Step-Ahead/assets/index-789aa6ac.css">
-  </head>
 
-  <body>
-    <section class="fruits-section">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>One Step Ahead</title>
+  
+  <script type="module" crossorigin src="/One-Step-Ahead/assets/index-fac82e35.js"></script>
+  <link rel="stylesheet" href="/One-Step-Ahead/assets/index-dc697bed.css">
+</head>
+
+<body>
+
+  <section class="contacts">
+    <div class="container">
+        <h2 class="contacts-title"> Fresh Harvest Box has got you covered</h2>
+
+        <ul class="contacts-fruit-list list">
+            <li class="contacts-fruit-item">
+                <picture class="contacts-fruit-img">
+                    <!-- Desktop screen -->
+
+                    <source media="(min-width: 1280px)" srcset="/One-Step-Ahead/assets/Melon-desk-1x-17c11d22.jpg 1x, /One-Step-Ahead/assets/Melon-desk-2x-a8845b53.jpg 2x" type="image/jpg" />
+                    <!-- Tablet screen -->
+                    <source media="(min-width: 768px)" srcset="/One-Step-Ahead/assets/Melon-tabl-1x-d2158970.jpg 1x, /One-Step-Ahead/assets/Melon-tabl-2x-a9bd1ae3.jpg 2x" type="image/jpg" width="344" height="480" />
+                    <!-- Phone screen -->
+
+                    <source media="(max-width: 767px)" srcset="/One-Step-Ahead/assets/Melon-mob-1x-fc1de711.jpg 1x, /One-Step-Ahead/assets/Melon-mob-2x-5d62467c.jpg 2x" type="image/jpg" width="335" height="476" />
+                    <img src="/One-Step-Ahead/assets/Melon-desk-1x-17c11d22.jpg" alt="Melon" width="792" height="502" loading="lazy"
+                        class="contacts-fruit-img" />
+                </picture>
+
+
+            </li>
+
+            <li class="contacts-fruit-item blub-item">
+                <picture class="contacts-fruit-img">
+                    <!-- Desktop screen -->
+
+                    <source media="(min-width: 1280px)" srcset="/One-Step-Ahead/assets/Blueberry-desk-1x-f38b68bb.jpg 1x, /One-Step-Ahead/assets/Blueberry-desk-2x-368b3c32.jpg 2x" type="image/jpg" />
+                    <!-- Tablet screen -->
+
+                    <source media="(min-width: 768px)" srcset="/One-Step-Ahead/assets/Blueberry-tabl-1x-d0307798.jpg 1x, /One-Step-Ahead/assets/Blueberry-tabl-2x-04013396.jpg 2x" type="image/jpg" width="344" height="480" />
+                    <!-- Phone screen -->
+
+                    <source media="(max-width: 767px)" srcset="
+                                      ./img/ContactsFruit/Blueberry-mob-1x.jpg 1x,
+                                     ./img/ContactsFruit/Blueberry-mob-2x.jpg 2x
+                                    " type="image/jpg" />
+                    <img src="/One-Step-Ahead/assets/Blueberry-desk-1x-f38b68bb.jpg" alt="Melon" width="400" height="502"
+                        loading="lazy" class="contacts-fruit-img" />
+                </picture>
+            </li>
+        </ul>
+
+        <p class="contacts-paragraph">Our boxes are packed with delicious, nutritious fruits and vegetables, perfect for
+            anyone looking to eat
+            healthier or
+            support local farmers. Order your box today and start enjoying the best that nature has to offer!</p>
+
+        <form class="contact-sub-form">
+            <label class="contact-field">
+
+                <input type="email" name="user-email" placeholder="Enter email.."
+                    pattern="^[\w.-]+@[a-zA-Z_-]+?(?:\.[a-zA-Z]{2,6})+$" required class="contacts-email">
+            </label>
+
+            <button type="submit" class="contacts-sub-btn">Send</button>
+
+        </form>
+
+    </div>
+
+
+</section>
+
+  <h1 class="container">Hello Team # 15 Let's Go To Work</h1>
+
+
+
+  
+</body>
+
+</html>
+
+<body>
+  <section class="fruits-section">
   <div class="container">
     <h2 class="fruits-title">organic fruits</h2>
     <p class="fruits-text">
@@ -163,7 +233,7 @@
   </div>
 </section>
 
-    <section class="contacts">
+  <section class="contacts">
     <div class="container">
         <h2 class="contacts-title"> Fresh Harvest Box has got you covered</h2>
 
@@ -172,23 +242,14 @@
                 <picture class="contacts-fruit-img">
                     <!-- Desktop screen -->
 
-                    <source media="(min-width: 1280px)" srcset="
-                      ../img/ContactsFruit/Melon-desk-1x.jpg 1x,
-                     ../img/ContactsFruit/Melon-desk-2x.jpg 2x
-                    " type="image/jpg" />
+                    <source media="(min-width: 1280px)" srcset="/One-Step-Ahead/assets/Melon-desk-1x-17c11d22.jpg 1x, /One-Step-Ahead/assets/Melon-desk-2x-a8845b53.jpg 2x" type="image/jpg" />
                     <!-- Tablet screen -->
-                    <source media="(min-width: 768px)" srcset="
-                        ../img/ContactsFruit/Melon-tabl-1x.jpg 1x,
-                     ../img/ContactsFruit/Melon-tabl-2x.jpg 2x
-                    " type="image/jpg" width="344" height="480" />
+                    <source media="(min-width: 768px)" srcset="/One-Step-Ahead/assets/Melon-tabl-1x-d2158970.jpg 1x, /One-Step-Ahead/assets/Melon-tabl-2x-a9bd1ae3.jpg 2x" type="image/jpg" width="344" height="480" />
                     <!-- Phone screen -->
 
-                    <source media="(max-width: 767px)" srcset="
-                      ../img/ContactsFruit/Melon-mob-1x.jpg 1x,
-                     ../img/ContactsFruit/Melon-mob-2x.jpg 2x
-                    " type="image/jpg" width="335" height="476" />
-                    <img src="../img/ContactsFruit/Melon-desk-1x.jpg" alt="Melon" width="792" height="502"
-                        loading="lazy" class="contacts-fruit-img" />
+                    <source media="(max-width: 767px)" srcset="/One-Step-Ahead/assets/Melon-mob-1x-fc1de711.jpg 1x, /One-Step-Ahead/assets/Melon-mob-2x-5d62467c.jpg 2x" type="image/jpg" width="335" height="476" />
+                    <img src="/One-Step-Ahead/assets/Melon-desk-1x-17c11d22.jpg" alt="Melon" width="792" height="502" loading="lazy"
+                        class="contacts-fruit-img" />
                 </picture>
 
 
@@ -198,23 +259,17 @@
                 <picture class="contacts-fruit-img">
                     <!-- Desktop screen -->
 
-                    <source media="(min-width: 1280px)" srcset="
-                                      ../img/ContactsFruit/Blueberry-desk-1x.jpg 1x,
-                                     ../img/ContactsFruit/Blueberry-desk-2x.jpg 2x
-                                    " type="image/jpg" />
+                    <source media="(min-width: 1280px)" srcset="/One-Step-Ahead/assets/Blueberry-desk-1x-f38b68bb.jpg 1x, /One-Step-Ahead/assets/Blueberry-desk-2x-368b3c32.jpg 2x" type="image/jpg" />
                     <!-- Tablet screen -->
 
-                    <source media="(min-width: 768px)" srcset="
-                                        ../img/ContactsFruit/Blueberry-tabl-1x.jpg 1x,
-                                     ../img/ContactsFruit/Blueberry-tabl-2x.jpg 2x
-                                    " type="image/jpg" width="344" height="480" />
+                    <source media="(min-width: 768px)" srcset="/One-Step-Ahead/assets/Blueberry-tabl-1x-d0307798.jpg 1x, /One-Step-Ahead/assets/Blueberry-tabl-2x-04013396.jpg 2x" type="image/jpg" width="344" height="480" />
                     <!-- Phone screen -->
 
                     <source media="(max-width: 767px)" srcset="
-                                      ../img/ContactsFruit/Blueberry-mob-1x.jpg 1x,
-                                     ../img/ContactsFruit/Blueberry-mob-2x.jpg 2x
+                                      ./img/ContactsFruit/Blueberry-mob-1x.jpg 1x,
+                                     ./img/ContactsFruit/Blueberry-mob-2x.jpg 2x
                                     " type="image/jpg" />
-                    <img src="../img/ContactsFruit/Blueberry-desk-1x.jpg" alt="Melon" width="400" height="502"
+                    <img src="/One-Step-Ahead/assets/Blueberry-desk-1x-f38b68bb.jpg" alt="Melon" width="400" height="502"
                         loading="lazy" class="contacts-fruit-img" />
                 </picture>
             </li>
@@ -228,7 +283,8 @@
         <form class="contact-sub-form">
             <label class="contact-field">
 
-                <input type="email" name="user-email" placeholder="Enter email" class="contacts-email">
+                <input type="email" name="user-email" placeholder="Enter email.."
+                    pattern="^[\w.-]+@[a-zA-Z_-]+?(?:\.[a-zA-Z]{2,6})+$" required class="contacts-email">
             </label>
 
             <button type="submit" class="contacts-sub-btn">Send</button>
@@ -240,6 +296,7 @@
 
 </section>
 
-    
-  </body>
+  
+</body>
+
 </html>

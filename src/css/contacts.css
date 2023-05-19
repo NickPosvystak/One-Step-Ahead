@@ -124,13 +124,15 @@
     background-color: var(--fourth-color);
     border-radius: 100px;
     border: 1px solid var(--fourth-color);
-    transition: font-size 250ms cubic-bezier(.03, .08, 1, .92);
+    transition: color 250ms cubic-bezier(.03, .08, 1, .92),
+        background-color 250ms cubic-bezier(.03, .08, 1, .92);
 }
 
 
 .contacts-sub-btn:focus,
 .contacts-sub-btn:hover {
-    font-size: 18px;
+    color: var(--fourth-color);
+    background-color: var(--second-color);
 }
 
 .contacts-fruit-list {

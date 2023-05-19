@@ -1,0 +1,213 @@
+/**
+  |============================
+  | start hero style
+  |============================
+*/
+.hero {
+  padding-top: 56px;
+  padding-bottom: 80px;
+}
+@media only screen and (min-width: 768px) {
+  .hero {
+    padding-top: 64px;
+    padding-bottom: 137px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .hero {
+    padding-top: 64px;
+    padding-bottom: 150px;
+  }
+}
+.hero-container {
+  display: block;
+  position: relative;
+}
+.hero-img {
+  width: 335px;
+
+  background: linear-gradient(var(--first-color), var(--first-color))
+      padding-box,
+    linear-gradient(to bottom, var(--first-color) 20%, var(--second-color) 40%)
+      border-box;
+  border-radius: 50em;
+  border: 1px solid transparent;
+  padding: 28px 12px;
+  display: block;
+  margin-top: 118px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 71px;
+}
+.hero-title {
+  font-family: var(--primary-font);
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1;
+  text-align: center;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  width: 335px;
+  margin-bottom: 386px;
+
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: calc(50% - 335px / 2);
+  top: -24px;
+  z-index: 200;
+}
+@media only screen and (min-width: 768px) {
+  .hero-title {
+    font-size: 50px;
+    line-height: 1.08;
+    width: 704px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .hero-title {
+    font-size: 64px;
+    line-height: 1;
+    width: 898px;
+  }
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.banana-img {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  z-index: 50;
+  transform: rotate(20deg);
+}
+.strawberry-img {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  z-index: 50;
+  transform: rotate(20deg);
+}
+
+.hero-btn {
+  
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1;
+  color: var(--first-color);
+  background-color: var(--second-color);
+  text-align: center;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  left: 40%;
+  bottom: 61%;
+  z-index: 200;
+}
+.btn-text {
+  display: block;
+  width: 55px;
+  margin: 14px 8px;
+  transform: rotate(-22deg);
+}
+/**
+  |============================
+  | fruit container
+  |============================
+*/
+.hero-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 44px;
+}
+.hero-text {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.04em;
+  color: var(--second-color);
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+text-align: left;
+  display: block;
+  width: 279px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*
+  |============================
+  | fruit container style
+  |============================
+*/
+.fruit-container {
+  display: flex;
+  align-items: center;
+  width: 249px;
+  height: 387px;
+  padding-top: 28px;
+  padding-bottom: 40px;
+  border: none;
+  border-radius: 500px;
+}
+.green {
+  background-color: var(--fourth-color);
+}
+.yellow {
+  background-color: var(--fifth-color);
+}
+
+.fruit-container-title {
+  display: block;
+  margin-bottom: 5px;
+}
+.product-titel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  
+  padding: 0;
+}
+.product-item {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 12px 32px;
+  gap: 8px;
+
+  text-transform: uppercase;
+
+  width: 125px;
+  height: 38px;
+
+  left: 55px;
+  top: 1299px;
+
+  border: 1px solid #ffffff;
+  border-radius: 1000px;
+}
+/**
+  |============================
+  | and hero style
+  |============================
+*/

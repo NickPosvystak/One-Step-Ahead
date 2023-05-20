@@ -3,6 +3,7 @@
   | start hero style
   |============================
 */
+
 /* .hero {
   padding-top: 56px;
   padding-bottom: 80px;
@@ -19,13 +20,8 @@
     padding-bottom: 150px;
   }
 }
-.hero-container {
-  display: block;
-  position: relative;
-}
-.hero-img {
-  position: relative;
-  width: 335px;
+
+
 
   background: linear-gradient(var(--first-color), var(--first-color))
       padding-box,
@@ -33,13 +29,7 @@
       border-box;
   border-radius: 50em;
   border: 1px solid transparent;
-  padding: 28px 12px;
-  display: block;
-
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 71px;
-} */
+  
 
 /* Hero ex */
 
@@ -69,7 +59,8 @@
   margin-left: auto;
   margin-bottom: 79px;
  box-sizing: border-box;
- 
+ }
+
 .hero-main::after {
       content: '';
     position: absolute;
@@ -82,7 +73,7 @@
     
 }
 
-}
+
 @media only screen and (max-width: 375px) {
   .hero-main {
     background-image: url(../img/Hero_1/main_m836px@1x.webp);

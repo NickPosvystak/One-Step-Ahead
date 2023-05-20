@@ -1,0 +1,23 @@
+.modal-thank {
+    width: 600px;
+    height: 545px;
+    background-color: var(--first-color);
+   
+    border-radius: 20px;
+}
+.modal-thank-close {
+    padding: 7px;
+    border: none;
+    cursor: pointer;
+}
+.modal-thank-close-icon {
+    fill: var(--second-color);
+}
+.modal-thank-title {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.modal-thank-text {
+   font-size: 14px;
+   text-shadow: 0px 4px 70px rgba(0 0 0 0.1);
+}

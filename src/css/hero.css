@@ -4,7 +4,7 @@
   |============================
 */
 .hero {
-  padding-top: 117px;
+  padding-top: 118px;
   padding-bottom: 80px;
 }
 @media only screen and (min-width: 768px) {
@@ -23,8 +23,43 @@
   display: block;
   position: relative;
 }
+
+/* .multi-bg {
+  position: relative;
+  z-index: 1;
+  min-width: 200px;
+  min-height: 200px;
+  padding: 120px 200px 50px;
+  background: #d3ff99 url(./img/vines-back.png) -10% 0 repeat-x;
+}
+
+.multi-bg:before,
+.multi-bg:after {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 100px;
+}
+
+.multi-bg:before {
+  content: url(./img/gorilla-1.png);
+  padding-left: 3%;
+  text-align: left;
+  background: transparent url(./img/vines-mid.png) 300% 0 repeat-x;
+}
+
+.multi-bg:after {
+  content: url(./img/gorilla-2.png);
+  padding-right: 3%;
+  text-align: right;
+  background: transparent url(./img/vines-front.png) 70% 0 repeat-x;
+} */
+
 .hero-img {
-  width: 335px;
+  width: 311px;
 
   background: linear-gradient(var(--first-color), var(--first-color))
       padding-box,
@@ -57,23 +92,23 @@
   text-transform: uppercase;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 
-  display: flex;
+  display: block;
   align-items: center;
   position: absolute;
+  top: -40px;
   left: calc(50% - 335px / 2);
-  top: -24px;
   z-index: 200;
 }
 @media only screen and (min-width: 768px) {
   .hero-title {
-    font-size: 50px;
-    line-height: 1, 08;
+    width: 704px;
+    left: 50%;
   }
 }
 @media only screen and (min-width: 1280px) {
   .hero-title {
-    font-size: 64px;
-    line-height: 1;
+    left: 0;
+    top: -3%;
   }
 }
 .visually-hidden {
@@ -91,21 +126,29 @@
 }
 .banana-img {
   position: absolute;
-  top: 15px;
+  top: -7px;
   left: 10px;
   z-index: 50;
   transform: rotate(20deg);
+  width: 20%;
+}
+@media only screen and (mix-width: 375px) {
+  .banana-img {
+    width: 100%;
+    top: 0;
+    left: 27px;
+  }
 }
 .strawberry-img {
   position: absolute;
-  top: 0;
-  right: 10px;
+  top: -45px;
+  right: 17px;
   z-index: 50;
   transform: rotate(20deg);
+  width: 20%;
 }
 
 .hero-btn {
-  font-family: var(--font-family);
   font-weight: 500;
   font-size: 20px;
   line-height: 1;
@@ -124,8 +167,15 @@
   margin-right: auto;
   position: absolute;
   left: 40%;
-  bottom: 56%;
+  top: 357px;
+  /* bottom: 56%; */
+  /* bottom: -4%; */
   z-index: 200;
+}
+@media only screen and (min-width: 375px) {
+  .hero-btn {
+    top: 411px;
+  }
 }
 .btn-text {
   display: block;
@@ -152,8 +202,15 @@
   | fruit container style
   |============================
 */
+.description-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 44px;
+}
 .fruit-container {
   display: flex;
+  flex-direction: column;
   align-items: center;
   width: 249px;
   padding-top: 28px;
@@ -163,13 +220,52 @@
 }
 .green {
   background-color: var(--fourth-color);
+  background-image: url(../img/hero-img/watermelon_200@1x.webp);
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .green {
+    background-image: url(../img/hero-img/watermelon_400@2x.webp);
+    background-size: contain;
+  }
 }
 .yellow {
   background-color: var(--fifth-color);
+  background-image: url(../img/hero-img/strawberry_162@1x.webp);
+  background-repeat: no-repeat;
+  background-position: 50% 30%;
 }
-.fruit-container-title {
-  display: block;
-  margin-bottom: 5px;
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .yellow {
+    background-image: url(../img/hero-img/strawberry_324@2x.webp);
+    background-size: contain;
+  }
+}
+.fruit-shadow {
+  width: 239px;
+  height: 38px;
+  background: #000000;
+  mix-blend-mode: normal;
+  opacity: 0.1;
+  filter: blur(13.5914px);
+}
+.fruit-title {
+  margin-bottom: 214px;
+}
+.fruit-text {
+  text-align: center;
+  font-family: var(--primary-font);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
 }
 /**
   |============================

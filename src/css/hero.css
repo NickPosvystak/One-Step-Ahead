@@ -4,18 +4,18 @@
   |============================
 */
 .hero {
-  padding-top: 56px;
+  padding-top: 117px;
   padding-bottom: 80px;
 }
 @media only screen and (min-width: 768px) {
   .hero {
-    padding-top: 64px;
+    padding-top: 122px;
     padding-bottom: 137px;
   }
 }
 @media only screen and (min-width: 1280px) {
   .hero {
-    padding-top: 64px;
+    padding-top: 122px;
     padding-bottom: 150px;
   }
 }
@@ -28,17 +28,25 @@
 
   background: linear-gradient(var(--first-color), var(--first-color))
       padding-box,
-    linear-gradient(to bottom, var(--first-color) 20%, var(--second-color) 40%)
+    linear-gradient(to bottom, var(--first-color) 30%, var(--second-color) 75%)
       border-box;
   border-radius: 50em;
   border: 1px solid transparent;
-  padding: 28px 12px;
+  padding: 12px;
+
   display: block;
-  margin-top: 118px;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 58px;
 }
+@media only screen and (min-width: 768px) {
+  .hero-img {
+    width: 452px;
+    margin-bottom: 59px;
+    padding: 17px;
+  }
+}
+
 .hero-title {
   font-family: var(--primary-font);
   font-weight: 500;
@@ -48,8 +56,6 @@
   letter-spacing: -0.04em;
   text-transform: uppercase;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
-  width: 335px;
-  margin-bottom: 386px;
 
   display: flex;
   align-items: center;
@@ -61,15 +67,13 @@
 @media only screen and (min-width: 768px) {
   .hero-title {
     font-size: 50px;
-    line-height: 1.08;
-    width: 704px;
+    line-height: 1, 08;
   }
 }
 @media only screen and (min-width: 1280px) {
   .hero-title {
     font-size: 64px;
     line-height: 1;
-    width: 898px;
   }
 }
 .visually-hidden {

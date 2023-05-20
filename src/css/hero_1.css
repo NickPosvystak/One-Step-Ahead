@@ -43,6 +43,11 @@
 
 /* Hero ex */
 
+.hero-container {
+  display: block;
+  /* position: relative; */
+}
+
 .hero-container.container {
   padding-top: 100px;
 }
@@ -60,9 +65,9 @@
   border-radius: 50em;
   border: 1px solid transparent;
 
-  /* padding: 28px 12px; */
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 79px;
 }
 @media only screen and (max-width: 375px) {
   .hero-main {
@@ -84,6 +89,8 @@
 
 @media only screen and (min-width: 376px) and (max-width: 768px) {
   .hero-main {
+    min-width: 452px;
+    height: 702px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -100,6 +107,8 @@
 
 @media only screen and (min-width: 769px) {
   .hero-main {
+    min-width: 452px;
+    height: 702px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -115,12 +124,11 @@
 }
 
 .hero-title {
-  font-family: var(--primary-font);
   font-weight: 500;
   font-size: 28px;
   line-height: 1;
   text-align: center;
-  letter-spacing: -0.04em;
+
   text-transform: uppercase;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   width: 335px;
@@ -129,18 +137,26 @@
   align-items: center;
   position: absolute;
   left: calc(50% - 335px / 2);
-  top: -24px;
+  top: 46px;
   z-index: 200;
 }
 @media only screen and (min-width: 768px) {
   .hero-title {
+    left: calc(50% - 704px / 2);
+    top: 64px;
     font-size: 50px;
+    line-height: 1.08;
+
+    letter-spacing: -0.04em;
+    text-transform: uppercase;
+
     line-height: 1.08;
     width: 704px;
   }
 }
 @media only screen and (min-width: 1280px) {
   .hero-title {
+    left: calc(50% - 898px / 2);
     font-size: 64px;
     line-height: 1;
     width: 898px;
@@ -176,8 +192,9 @@
 
 .hero-btn {
   position: absolute;
-  top: 456px;
-  left: 128px;
+
+  left: 148px;
+  top: 386px;
 
   font-weight: 500;
   font-size: 20px;
@@ -198,6 +215,17 @@
 
   z-index: 200;
 }
+@media only screen and (min-width: 768px) {
+  .hero-btn {
+    width: 114px;
+    height: 114px;
+
+    font-size: 28px;
+
+    left: 169px;
+    top: 623px;
+  }
+}
 
 .hero-img > .hero-btn {
   position: absolute;
@@ -207,8 +235,19 @@
 .btn-text {
   display: block;
   width: 55px;
+  height: 40px;
   margin: 14px 8px;
-  transform: rotate(-22deg);
+  transform: rotate(-14deg);
+}
+
+@media only screen and (min-width: 768px) {
+  .btn-text {
+     width: 84px;
+  height: 56px;
+    margin: 20px 9px;
+    font-weight: 500;
+    font-size: 28px;
+  }
 }
 /**
   |============================
@@ -220,6 +259,13 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 44px;
+}
+
+@media only screen and (min-width: 1280px) {
+  .hero-list {
+    position: absolute;
+    top: 568px;
+  }
 }
 .hero-item {
 }

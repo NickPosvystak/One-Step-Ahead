@@ -45,7 +45,7 @@
 
 .hero-container {
   display: block;
-  /* position: relative; */
+  
 }
 
 .hero-container.container {
@@ -63,11 +63,25 @@
   height: 509px;
 
   border-radius: 50em;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
 
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 79px;
+ box-sizing: border-box;
+ 
+.hero-main::after {
+      content: '';
+    position: absolute;
+    border: -2px solid green;;
+    bottom: 5px;
+    left: 2px;
+    display: block;
+    width: 155%;
+    height: 4px;
+    
+}
+
 }
 @media only screen and (max-width: 375px) {
   .hero-main {
@@ -285,17 +299,11 @@
   }
 }
 
-.hero-item {
-}
-
 @media only screen and (min-width: 768px) {
   .hero-list {
     flex-wrap: nowrap;
     gap: 141px;
   }
-}
-
-.hero-item {
 }
 
 .hero-text {

@@ -8,11 +8,9 @@
 
 @import url('./fruits.css');
 @import url('./contacts.css');
+@import url('./howitworks.css');
 @import url('./footer.css');
 @import url('./modal-fruits.css');
-
-
-
 
 :root {
   /* Colors */

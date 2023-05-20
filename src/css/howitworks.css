@@ -85,7 +85,7 @@
   align-items: center;
   width: 335px;
   height: 112px;
-  background: #ffffff;
+  background: var(--second-color);
   border-radius: 20px;
   padding: 20px;
   gap: 14px;
@@ -123,9 +123,8 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 1.33;
-
   letter-spacing: -0.04em;
-  color: #ffffff;
+  color: var(--second-color);
 }
 
 .how-card-text {
@@ -137,7 +136,7 @@
   display: flex;
   align-items: center;
   letter-spacing: -0.04em;
-  color: #000000;
+  color: var(--third-color);
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
 
@@ -166,6 +165,6 @@
   .how-gif {
     width: 860px;
     height: 476px;
-    border: 1px solid #000000;
+    border: 1px solid var(--third-color);
   }
 }

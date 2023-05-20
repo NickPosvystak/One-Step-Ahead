@@ -50,6 +50,16 @@
   }
 }
 
+.how-cards {
+  margin-bottom: 44px;
+}
+
+@media screen and (min-width: 768px) {
+  .how-cards {
+    margin-bottom: 80px;
+  }
+}
+
 .how-cards-list {
   display: flex;
   padding-left: 0;
@@ -130,4 +140,16 @@
   letter-spacing: -0.04em;
   color: #000000;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 767px) {
+  .how-gif-mob {
+    border-radius: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .how-gif-mob {
+    display: none;
+  }
 }

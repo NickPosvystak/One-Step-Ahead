@@ -1,0 +1,128 @@
+.container-first {
+    min-width: 320px;
+    max-width: 375px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+
+    .footer-img {
+        display: block;
+        border-radius: 100px;
+        
+        margin-bottom: 24px;
+    }
+
+
+
+
+@media screen and (min-width: 768px) {
+    .footer-img {
+     display: flex;
+     margin-bottom: 20px;
+
+    }
+}
+.footer-container {
+    background-color: var(--second-color);
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.container-vector-svg {
+    display: flex;
+    width: 16px;
+    height: 16px;
+    fill: var(--first-color);
+    margin-right: 8px;
+}
+.footer-header {
+    
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.28;
+    
+    width: 132px;
+    height: 18px;
+
+   display: flex;
+   align-items: center;
+   text-align: center;
+   letter-spacing: -0.04em;
+   text-transform: uppercase;
+
+  color: var(--first-color);
+}
+
+    .container-vector-header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 24px;
+
+    }
+
+@media screen and (min-width: 768px) {
+    .container-vector-header {
+        display: flex;
+        
+    }
+}
+.footer-contacts-container {
+    display: flex;
+    align-items: center;
+}
+.footer-contacts {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-item {
+    
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.28;
+   
+    width: 34px;
+    height: 18px;
+    margin-bottom: 24px;
+   
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.04em;
+
+    color:  var(--first-color);
+}
+
+  
+
+
+    .footer-social {
+        display: flex;
+        margin-bottom: 24px;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .footer-social-svg {
+        fill: var(--first-color);
+    }
+
+@media screen and (min-width: 768px) {
+    .address {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+}
+}

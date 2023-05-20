@@ -262,11 +262,29 @@
 }
 
 @media only screen and (min-width: 1280px) {
-  .hero-list {
-    position: absolute;
-    top: 568px;
+  .hero-item {
+   position: absolute;
+   top: 400px;
+   left: 62px;
   }
 }
+
+@media only screen and (min-width: 1280px) {
+  .hero-item-yellow {
+   position: absolute;
+   top: 336px;
+   right: 62px;
+   display: flex;
+   flex-wrap: wrap;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .product-titel {
+  max-width: 256px;
+
+  }
+}
+
 .hero-item {
 }
 

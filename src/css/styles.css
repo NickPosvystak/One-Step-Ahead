@@ -3,16 +3,17 @@
   | include css partials with
   | default @import url()
   |============================
-*/
+  
+  */
+
 @import url('./reset.css');
 
+@import url('./header.css');
+@import url('./howitworks.css');
 @import url('./fruits.css');
 @import url('./contacts.css');
 @import url('./footer.css');
 @import url('./modal-fruits.css');
-
-
-
 
 :root {
   /* Colors */

@@ -4,7 +4,7 @@
   |============================
 */
 .hero {
-  padding-top: 118px;
+  padding-top: 117px;
   padding-bottom: 80px;
 }
 @media only screen and (min-width: 768px) {
@@ -24,7 +24,9 @@
   position: relative;
 }
 .hero-img {
-  min-width: 311px;
+  /* width: 311px;
+  height: 484px; */
+  object-fit: cover;
 
   background: linear-gradient(var(--first-color), var(--first-color))
       padding-box,
@@ -32,19 +34,19 @@
       border-box;
   border-radius: 50em;
   border: 1px solid transparent;
-  padding: 12px;
+  padding: 28px 12px;
 
   display: block;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 58px;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 767px) {
   .hero-img {
-    min-width: 452px;
-    height: 702px;
+    /* width: 452px;
+    height: 702px; */
     margin-bottom: 59px;
-    padding: 17px 20px;
+    padding: 28px 20px;
   }
 }
 
@@ -65,9 +67,37 @@
   left: calc(50% - 335px / 2);
   z-index: 200;
 }
+
+.hero-title-d-t {
+  display: none;
+}
+
 @media only screen and (min-width: 768px) {
+  .hero-title-d-t {
+    display: block;
+    font-size: 50px;
+    line-height: 1.1;
+    left: calc(50% - 704px / 2 - 4px);
+  }
+  .hero-title-m {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .hero-title-d-t {
+    display: block;
+    font-size: 64px;
+    line-height: 1;
+    left: 191px;
+  }
+  .hero-title-m {
+    display: none;
+  }
+}
+/* @media only screen and (min-width: 768px) {
   .hero-title {
-    left: calc(48% - 704px / 2 - 4px);
+    left: calc(50% - 704px / 2 - 4px);
     font-size: 50px;
     line-height: 1.1;
   }
@@ -78,7 +108,7 @@
     line-height: 1;
     left: calc(32% - 704px / 2 - 4px);
   }
-}
+} */
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -94,26 +124,65 @@
 }
 .banana-img {
   position: absolute;
-  top: -7px;
-  left: 10px;
+  top: 1%;
+  left: -10px;
   z-index: 50;
-  transform: rotate(20deg);
-  width: 20%;
+  transform: rotate(14deg);
 }
-@media only screen and (mix-width: 375px) {
+
+@media only screen and (min-width: 375px) {
   .banana-img {
-    width: 100%;
-    top: 0;
-    left: 27px;
+    top: 9px;
+    left: 9px;
   }
 }
+@media only screen and (min-width: 768px) {
+  .banana-img {
+    top: 3%;
+    left: 0;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .banana-img {
+    width: 183px;
+    top: 89px;
+    left: 20%;
+  }
+}
+
 .strawberry-img {
   position: absolute;
-  top: -45px;
-  right: 17px;
+  top: -35px;
+  right: 34px;
   z-index: 50;
-  transform: rotate(20deg);
-  width: 20%;
+}
+@media only screen and (min-width: 321px) and (max-width: 374px) {
+  .strawberry-img {
+    width: 25%;
+    top: 0;
+    right: 27px;
+  }
+}
+@media only screen and (min-width: 375px) {
+  .strawberry-img {
+    width: 56px;
+    top: -2%;
+    right: 27px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .strawberry-img {
+    width: 108px;
+    top: -55px;
+    right: 47px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .strawberry-img {
+    width: 120px;
+    top: -60px;
+    right: 19%;
+  }
 }
 
 .hero-btn {
@@ -135,33 +204,34 @@
   margin-left: auto;
   margin-right: auto;
   position: absolute;
-  left: 40%;
-  top: 26%;
+  left: 39%;
+  top: 365px;
   z-index: 200;
 }
 @media only screen and (min-width: 375px) {
   .hero-btn {
     font-size: 28px;
-    top: 28%;
+    top: 24%;
     width: 114px;
     height: 114px;
   }
 }
 @media only screen and (min-width: 768px) {
   .hero-btn {
-    top: 37%;
-    left: 45%;
+    top: 34%;
+    left: 44%;
   }
 }
 .btn-text {
   display: block;
+  text-align: center;
   width: 55px;
-  margin: 14px 8px;
+  margin: 14px 16px;
   transform: rotate(-14deg);
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 768px) {
   .btn-text {
-    margin: 20px 9px;
+    margin: 20px 17px;
   }
 }
 .hero-text {
@@ -194,7 +264,9 @@
 }
 @media only screen and (min-width: 768px) {
   .description-box {
-    gap: 141px;
+    flex-wrap: wrap;
+    flex-basis: calc(100% - 141px / 2);
+    gap: 44px, 141px;
   }
 }
 
@@ -341,7 +413,7 @@
 }
 @media only screen and (min-width: 1280px) {
   .hero-item-yellow {
-    position: absolute;
+    /* position: absolute; */
     top: 336px;
     right: 62px;
     display: flex;

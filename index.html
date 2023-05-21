@@ -1,85 +1,457 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vanilla-app-template/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    
-    <script type="module" crossorigin src="/vanilla-app-template/assets/index-fac82e35.js"></script>
-    <link rel="stylesheet" href="/vanilla-app-template/assets/index-10c40100.css">
-  </head>
-  <body>
-    <header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
 
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-  </nav>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/One-Step-Ahead/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>One Step Ahead</title>
+  
+  <script type="module" crossorigin src="/One-Step-Ahead/assets/index-fac82e35.js"></script>
+  <link rel="stylesheet" href="/One-Step-Ahead/assets/index-d48ab34c.css">
+</head>
+
+<body>
+
+  <header class="page-header">
+  <div class="container-header">
+    <nav class="navigation">
+      <ul class="nav-list">
+        <li><a href="#">How It Works</a></li>
+        <li><a href="#fruits">Fruits</a></li>
+        <li><a href="#contacts">Contacts</a></li>
+      </ul>
+      <div class="logo">
+        <svg class="description-icon" width="16" height="16">
+          <use href="../img/header/symbol-defs.svg#icon-logo"></use>
+        </svg>
+        <span> fresh harvest box</span>
+      </div>
+    </nav>
+    <div class="basket">
+      <button class="icon-button">
+        <svg width="28" height="28">
+          <use href="../img/header/symbol-defs.svg#icon-basket"></use>
+        </svg>
+      </button>
+      </div>
+      <div class="menu">
+      <button class="icon-menu">
+        <svg width="24" height="24">
+          <use href="../img/header/symbol-defs.svg#icon-menu"></use>
+        </svg>
+      </button>
+      </div>
+  </div>
 </header>
 
 
-    <section>
-      <h1>Lorem ipsum dolor sit amet.</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="/vanilla-app-template/assets/javascript-8dac5379.svg" alt="" />
+      <section class="container how-section">
+        <div class="title-position">
+            <h3 class="how-title">To order your fruit basket, simply follow these easy steps</h3>
+            <p class="how-text">Our baskets are assembled with care and delivered straight to your doorstep, so you can
+                enjoy the taste of fresh fruit
+                without ever leaving your home. Whether you're looking for a healthy snack or a thoughtful gift, our
+                fruit
+                baskets are
+                the perfect choice.</p>
+        </div>
+        <div class="how-cards">
+            <ul class="list how-cards-list">
+                <li class="how-card">
+                    <div class="first-step step">FIrst Step</div>
+                    <p class="how-card-text">Just choose the fruit you want to order by clicking on the checkboxes next
+                        to
+                        it.</p>
+                </li>
+                <li class="how-card">
+                    <div class="second-step step">Second Step</div>
+                    <p class="how-card-text">Click on the basket and fill out the form.</p>
+                </li>
+
+                <li class="how-card">
+                    <div class="third-step step">Third Step</div>
+                    <p class="how-card-text">Sit back and relax! Your fresh fruit basket will be delivered.</p>
+                </li>
+            </ul>
+        </div>
+
+        <picture class="">
+            <img class="how-gif" src="../img/gif-fruits/mobgifimage.gif" alt="fruits gif" />
+        </picture>
+
+
+
     </section>
 
-    <!-- Loads the specified .html file -->
-    <section class="vite-promo">
+  <section class="fruits-section">
   <div class="container">
-    <div class="wrapper">
-      <h2 class="title">
-        <span class="gradient">Vite</span>
-      </h2>
-      <p class="text">Next Generation Frontend Tooling</p>
-      <p class="tagline">
-        Get ready for a development environment that can finally catch up with
-        you.
-      </p>
-
-      <ul class="actions">
-        <li class="action">
-          <a
-            class="link"
-            href="https://vitejs.dev/guide/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >Get Started</a
-          >
-        </li>
-        <li class="action">
-          <a
-            class="link"
-            href="https://github.com/vitejs/vite"
-            target="_blank"
-            rel="noopener noreferrer"
-            >View on GitHub</a
-          >
-        </li>
-      </ul>
-    </div>
-
-    <div class="thumb">
-      <!-- Path to images as from index.html file -->
-      <img
-        class="pic"
-        src="/vanilla-app-template/assets/vite-logo-51249ca9.png"
-        alt="Vite logo"
-        width="640"
-        height="640"
-      />
-    </div>
+    <h2 class="fruits-title">organic fruits</h2>
+    <p class="fruits-text">
+      Our organic fruits are hand-picked from local farms and delivered straight
+      to your doorstep, ensuring that you get the freshest and most nutritious
+      produce possible. We offer a wide selection of organic fruits grown
+      without the use of harmful pesticides or chemicals.
+    </p>
+    <ul class="fruits-list list">
+      <li class="fruits-item">
+        <h3 class="fruits-list-title">Strawberry</h3>
+        <p class="fruits-list-subtitle">Plant</p>
+        <img
+          srcset="/One-Step-Ahead/assets/organic-fruits1-8e585856.png 1x, /One-Step-Ahead/assets/organic-fruits1_@2x-3a9face1.png 2x"
+          src="/One-Step-Ahead/assets/organic-fruits1-8e585856.png"
+          alt="strawberry"
+          width="295"
+        />
+        <div class="img-boxshadow"></div>
+        <p class="fruits-list-price">100 UAH / kg</p>
+      </li>
+      <li class="fruits-item">
+        <h3 class="fruits-list-title">Banana</h3>
+        <p class="fruits-list-subtitle">Plant</p>
+        <img
+          srcset="/One-Step-Ahead/assets/organic-fruits2-1e6e92f4.png 1x, /One-Step-Ahead/assets/organic-fruits2_@2x-feb37172.png 2x"
+          src="/One-Step-Ahead/assets/organic-fruits2-1e6e92f4.png"
+          alt="banana"
+          width="295"
+          height="251"
+        />
+        <div class="img-boxshadow"></div>
+        <p class="fruits-list-price">80 UAH / kg</p>
+      </li>
+      <li class="fruits-item">
+        <h3 class="fruits-list-title">Watermelon</h3>
+        <p class="fruits-list-subtitle">Plant</p>
+        <img
+          srcset="/One-Step-Ahead/assets/organic-fruits3-c78dee92.png 1x, /One-Step-Ahead/assets/organic-fruits3_@2x-cd6e4d98.png 2x"
+          src="/One-Step-Ahead/assets/organic-fruits3-c78dee92.png"
+          alt="watermelon"
+          width="295"
+          height="251"
+        />
+        <div class="img-boxshadow"></div>
+        <p class="fruits-list-price">40 UAH / kg</p>
+      </li>
+      <li class="fruits-item">
+        <h3 class="fruits-list-title">Lime</h3>
+        <p class="fruits-list-subtitle">Plant</p>
+        <img
+          srcset="/One-Step-Ahead/assets/organic-fruits4-dcf4aa26.png 1x, /One-Step-Ahead/assets/organic-fruits4_@2x-2f864bd9.png 2x"
+          src="/One-Step-Ahead/assets/organic-fruits4-dcf4aa26.png"
+          alt="lime"
+          width="295"
+          height="251"
+        />
+        <div class="img-boxshadow"></div>
+        <p class="fruits-list-price">60 UAH / kg</p>
+      </li>
+      <li class="fruits-item">
+        <h3 class="fruits-list-title">Apple</h3>
+        <p class="fruits-list-subtitle">Plant</p>
+        <img
+          srcset="/One-Step-Ahead/assets/organic-fruits5-4b9f643d.png 1x, /One-Step-Ahead/assets/organic-fruits5_@2x-abbb6d62.png 2x"
+          src="/One-Step-Ahead/assets/organic-fruits5-4b9f643d.png"
+          alt="apple"
+          width="295"
+          height="251"
+        />
+        <div class="img-boxshadow"></div>
+        <p class="fruits-list-price">50 UAH / kg</p>
+      </li>
+      <li class="fruits-item">
+        <h3 class="fruits-list-title">Peach</h3>
+        <p class="fruits-list-subtitle">Plant</p>
+        <img
+          srcset="/One-Step-Ahead/assets/organic-fruits6-fc17a6c9.png 1x, /One-Step-Ahead/assets/organic-fruits6_@2x-7327146b.png 2x"
+          src="/One-Step-Ahead/assets/organic-fruits6-fc17a6c9.png"
+          alt="peach"
+          width="295"
+          height="251"
+        />
+        <div class="img-boxshadow"></div>
+        <p class="fruits-list-price">80 UAH / kg</p>
+      </li>
+      <li class="fruits-item">
+        <h3 class="fruits-list-title">Plums</h3>
+        <p class="fruits-list-subtitle">Plant</p>
+        <img
+          srcset="/One-Step-Ahead/assets/organic-fruits7-9a714ca8.png 1x, /One-Step-Ahead/assets/organic-fruits7_@2x-ab70db08.png 2x"
+          src="/One-Step-Ahead/assets/organic-fruits7-9a714ca8.png"
+          alt="plums"
+          width="295"
+          height="251"
+        />
+        <div class="img-boxshadow"></div>
+        <p class="fruits-list-price">40 UAH / kg</p>
+      </li>
+      <li class="fruits-item">
+        <h3 class="fruits-list-title">Orange</h3>
+        <p class="fruits-list-subtitle">Plant</p>
+        <img
+          srcset="/One-Step-Ahead/assets/organic-fruits8-59dbd4c9.png 1x, /One-Step-Ahead/assets/organic-fruits8_@2x-3d5698af.png 2x"
+          src="/One-Step-Ahead/assets/organic-fruits8-59dbd4c9.png"
+          alt="orange"
+          width="295"
+          height="251"
+        />
+        <div class="img-boxshadow"></div>
+        <p class="fruits-list-price">60 UAH / kg</p>
+      </li>
+      <li class="fruits-item">
+        <h3 class="fruits-list-title">Kiwi</h3>
+        <p class="fruits-list-subtitle">Plant</p>
+        <img
+          srcset="/One-Step-Ahead/assets/organic-fruits9-322b2185.png 1x, /One-Step-Ahead/assets/organic-fruits9_@2x-0e50b536.png 2x"
+          src="/One-Step-Ahead/assets/organic-fruits9-322b2185.png"
+          alt="kiwi"
+          width="295"
+          height="251"
+        />
+        <div class="img-boxshadow"></div>
+        <p class="fruits-list-price">90 UAH / kg</p>
+      </li>
+    </ul>
+    <button class="fruits-order-button" data-modal-open type="button">
+      <svg class="fruits-order-button-icon" width="14" height="14">
+        <use href="/One-Step-Ahead/assets/symbol-defs-d2f0a78e.svg#down-arrow"></use>
+      </svg>
+      <span class="fruits-order-text-wrapper">order</span>
+    </button>
   </div>
 </section>
 
 
+  <section class="contacts">
+    <div class="container">
+        <h2 class="contacts-title"> Fresh Harvest Box has got you covered</h2>
+
+        <ul class="contacts-fruit-list list">
+            <li class="contacts-fruit-item">
+                <picture class="contacts-fruit-img">
+                    <!-- Desktop screen -->
+
+                    <source media="(min-width: 1280px)" srcset="/One-Step-Ahead/assets/Melon-desk-1x-17c11d22.jpg 1x, /One-Step-Ahead/assets/Melon-desk-2x-a8845b53.jpg 2x" type="image/jpg" />
+                    <!-- Tablet screen -->
+                    <source media="(min-width: 768px)" srcset="/One-Step-Ahead/assets/Melon-tabl-1x-d2158970.jpg 1x, /One-Step-Ahead/assets/Melon-tabl-2x-a9bd1ae3.jpg 2x" type="image/jpg" width="344" height="480" />
+                    <!-- Phone screen -->
+
+                    <source media="(max-width: 767px)" srcset="/One-Step-Ahead/assets/Melon-mob-1x-fc1de711.jpg 1x, /One-Step-Ahead/assets/Melon-mob-2x-5d62467c.jpg 2x" type="image/jpg" width="335" height="476" />
+                    <img src="/One-Step-Ahead/assets/Melon-desk-1x-17c11d22.jpg" alt="Melon" width="792" height="502" loading="lazy"
+                        class="contacts-fruit-img" />
+                </picture>
+
+
+            </li>
+
+            <li class="contacts-fruit-item blub-item">
+                <picture class="contacts-fruit-img">
+                    <!-- Desktop screen -->
+
+                    <source media="(min-width: 1280px)" srcset="/One-Step-Ahead/assets/Blueberry-desk-1x-f38b68bb.jpg 1x, /One-Step-Ahead/assets/Blueberry-desk-2x-368b3c32.jpg 2x" type="image/jpg" />
+                    <!-- Tablet screen -->
+
+                    <source media="(min-width: 768px)" srcset="/One-Step-Ahead/assets/Blueberry-tabl-1x-d0307798.jpg 1x, /One-Step-Ahead/assets/Blueberry-tabl-2x-04013396.jpg 2x" type="image/jpg" width="344" height="480" />
+                    <!-- Phone screen -->
+
+                    <source media="(max-width: 767px)" srcset="
+                                      ./img/ContactsFruit/Blueberry-mob-1x.jpg 1x,
+                                     ./img/ContactsFruit/Blueberry-mob-2x.jpg 2x
+                                    " type="image/jpg" />
+                    <img src="/One-Step-Ahead/assets/Blueberry-desk-1x-f38b68bb.jpg" alt="Melon" width="400" height="502"
+                        loading="lazy" class="contacts-fruit-img" />
+                </picture>
+            </li>
+        </ul>
+
+        <p class="contacts-paragraph">Our boxes are packed with delicious, nutritious fruits and vegetables, perfect for
+            anyone looking to eat
+            healthier or
+            support local farmers. Order your box today and start enjoying the best that nature has to offer!</p>
+
+        <form class="contact-sub-form">
+            <label class="contact-field">
+
+                <input type="email" name="user-email" placeholder="Enter email..."
+                    pattern="^[\w.-]+@[a-zA-Z_-]+?(?:\.[a-zA-Z]{2,6})+$" required class="contacts-email">
+            </label>
+
+            <button type="submit" class="contacts-sub-btn">Send</button>
+
+        </form>
+
+
+    </div>
+
+
+</section>
+
+  <footer>
+    <div>
+        <img srcset="/One-Step-Ahead/assets/image1-9ee9769f.jpg ./img/footer-img/image@2x.jpg" 
+        src="/One-Step-Ahead/assets/image1-9ee9769f.jpg" alt="photo">
+    </div>
+    <div>
+        <svg>
+            <use href="/One-Step-Ahead/assets/symbol-defs-fc2b3ce7.svg#icon-vector"></use>
+        </svg>
+    </div>
+    <h4>fresh harvest box</h4>
+    <ul>
+        <li><a href="">How It Works</a></li>
+        <li><a href="">Fruits</a></li>
+        <li><a href="">Contacts</a></li>
+    </ul>
+    <ul>
+        <li><a href="" target="_blank" rel="noopener referrer">
+            <svg>
+                <use href="/One-Step-Ahead/assets/symbol-defs-fc2b3ce7.svg#icon-instagram"></use>
+            </svg>
+        </a>
+       </li>
+       <li><a href="" target="_blank" rel="noopener referrer">
+        <svg>
+            <use href="/One-Step-Ahead/assets/symbol-defs-fc2b3ce7.svg#icon-instagram"></use>
+        </svg>
+    </a>
+   </li>
+   <li><a href="" target="_blank" rel="noopener referrer">
+    <svg>
+        <use href="/One-Step-Ahead/assets/symbol-defs-fc2b3ce7.svg#icon-instagram"></use>
+    </svg>
+</a>
+</li>
+       
+    </ul>
+</footer>
+
+  <!-- MODAL WINDOW -->
+      <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button class="modal-button" type="button" data-modal-close>
+            <svg class="modal-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+        <h2 class="modal-title">Your Order</h2>
+          <form name="order-form">
+
+            <label class="modal-check check-strawberry">
+              <h3 class="modal-fruits-title">Strawberry Basket</h3>
+              <p class="modal-under-title">Plant</p>
+              <img 
+              srcset="./img/modal-fruits/strawberry-basket_mobile.jpg 1x,
+              ./img/modal-fruits/strawberry-basket_mobile@2x.jpg 2x" 
+              src="./img/modal-fruits/strawberry-basket_mobile.jpg"              
+              alt="strawberry">
+              <input 
+              type="checkbox"
+              class="modal-form-choice"
+              name="user_choice"
+              >
+            </label>
+
+
+            <label class="modal-check check-apple">
+              <h3 class="modal-fruits-title">Apple Basket</h3>
+              <p class="modal-under-title">Plant</p>
+              <img
+              srcset="data:image/jpeg;base64,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 1x, /One-Step-Ahead/assets/fruits-bag_mobile@2x-8356bc64.jpg 2x" 
+              src="data:image/jpeg;base64,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"
+              alt="apple"               
+              >
+              <input type="checkbox"
+              class="modal-form-choice"
+              name="user_choice"
+              >
+            </label>
+
+            
+            <label class="modal-check check-fruits-basket">
+              <h3 class="modal-fruits-title">Fruits Basket</h3>
+              <p class="modal-under-title">Plant</p>
+              <img
+              srcset="data:image/jpeg;base64,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 1x, /One-Step-Ahead/assets/fruits-plate_mobile@2x-e52c8f83.jpg 2x" 
+              src="data:image/jpeg;base64,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" 
+              alt="fruits"
+              >
+              <input type="checkbox"
+              class="modal-form-choice"
+              name="user_choice"
+              >
+            </label>
+
+            <label class="modal-form-label-box"> 
+              <div class="modal-form-field">
+                <input 
+                class="modal-form-input" 
+                type="text" 
+                name="user_name" 
+                minlength="2"
+                placeholder="Enter full name..."
+                required 
+                />
+              </div>
+            </label>
+
+
+            <label class="modal-form-label-box"> 
+              <div class="modal-form-field">
+                <input 
+                class="modal-form-input" 
+                type="email" 
+                name="user_email"
+                placeholder="Enter email..."
+                required 
+                />
+              </div>
+            </label>
+
+
+            <label class="modal-form-label-box">
+              <div class="modal-form-field">
+                <input 
+                class="modal-form-input" 
+                type="tel" 
+                inputmode="numeric" 
+                pattern="[0-9\s]{13,19}"
+                name="user_phone"
+                placeholder="Enter card.." 
+                required />
+              </div>
+            </label>
+
+
+            <label class="modal-form-text">
+              <textarea 
+                class="modal-form-massage" 
+                name="user_massage" 
+                rows="5" 
+                placeholder="Enter comments...">
+              </textarea>
+            </label>
+            
+            <button class="order-button" type="submit">Submit</button>
+
+          </form>
+      
+        </div>
+      </div>
+
     
-  </body>
+  
+  
+ 
+</body>
+
 </html>

@@ -1,0 +1,138 @@
+<!-- MODAL WINDOW -->
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="modal-button" type="button" data-modal-close>
+      <svg svg id="icon-close" viewBox="0 0 32 32" width="24" height="24">
+        <path fill="none" stroke="#ae1332" style="stroke: var(--color1, #ae1332)" stroke-linejoin="round"
+          stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M24 8l-16 16M8 8l16 16"></path>
+      </svg>
+    </button>
+    <h2 class="modal-title">Your Order</h2>
+
+    <form name="order-form">
+
+      <div>
+        <div class="form-card form-card-strawberry">
+          <label class="strawberry-label">
+            <div class="form-info">
+              <h3 class="modal-fruits-title">Strawberry Basket</h3>
+              <p class="modal-under-title">Plant</p>
+            </div>
+
+            <div class="picture picture-strawberry">
+              <img srcset="./img/modal-fruits/strawberry-basket_mob.png 1x,
+                      ./img/modal-fruits/strawberry-basket_mob@2x.png 2x"
+                  src="./img/modal-fruits/strawberry-basket_mob.png" alt="strawberry" width="88">
+            </div>
+            <input 
+            type="checkbox" 
+            class="modal-form-choice" 
+            name="user_choice"
+            >
+            <span class="icon"></span>
+          </label>
+        </div>
+
+        <div class="form-card form-card-apple">
+          <label class="apple-label">
+            <div class="form-info">
+              <h3 class="modal-fruits-title">Apple Basket</h3>
+              <p class="modal-under-title">Plant</p>
+            </div>
+
+            <div class="picture picture-apple">
+              <img srcset="./img/modal-fruits/fruits-bag_mob.png 1x,
+                      ./img/modal-fruits/fruits-bag_mob@2x.png 2x" src="./img/modal-fruits/fruits-bag_mob.png"
+                alt="apple" width="106">
+            </div>
+            <input 
+            type="checkbox" 
+            class="modal-form-choice" 
+            name="user_choice"
+            >
+            <span class="icon"></span>
+          </label>
+        </div>
+
+        <div class="form-card form-card-fruits">
+          <label class="fruits-label">
+            <div class="form-info">
+              <h3 class="modal-fruits-title">Fruits Basket</h3>
+              <p class="modal-under-title">Plant</p>
+            </div>
+            
+            <div class="picture picture-fruits">
+              <img srcset="./img/modal-fruits/fruits-plate_mob.png 1x,
+                      ./img/modal-fruits/fruits-plate_mob@2x.png 2x" src="./img/modal-fruits/fruits-plate_mob.png"
+                alt="fruits" width="107">
+            </div>
+            <input 
+            type="checkbox" 
+            class="modal-form-choice" 
+            name="user_choice"
+            >
+            <span class="icon"></span>
+          </label>
+        </div>
+      </div>
+
+      <div class="modal-form-field">
+        <label class="modal-form-label-box">
+          <div>
+            <input 
+            class="modal-form-input" 
+            type="text" 
+            name="user_name" 
+            minlength="2" 
+            placeholder="Enter full name..."
+            required 
+            />
+          </div>
+        </label>
+
+
+        <label class="modal-form-label-box">
+          <div>
+            <input 
+            class="modal-form-input" 
+            type="email" 
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+            name="user_email" 
+            placeholder="Enter email..." 
+            required 
+            />
+          </div>
+        </label>
+
+
+        <label class="modal-form-label-box">
+          <div>
+            <input 
+            class="modal-form-input" 
+            type="tel" 
+            inputmode="numeric" 
+            pattern="[0-9\s]{13,19}" 
+            name="user_phone"
+            placeholder="Enter card.." 
+            required 
+            />
+          </div>
+        </label>
+
+
+        <label class="modal-form-text">
+          <textarea 
+          class="modal-form-massage" 
+          name="user_massage" 
+          rows="5" 
+          placeholder="Enter comments..."
+          >
+          </textarea>
+        </label>
+
+        <button class="order-button" type="submit">Submit</button>
+      </div>
+    </form>
+
+  </div>
+</div>

@@ -50,7 +50,7 @@ body {
 
   margin-right: auto;
   margin-left: auto;
-  /* коментую верхній і ніжній падінги бо вони тут не потрібні */
+
   padding-left: 20px;
   padding-right: 20px;
 
@@ -67,7 +67,7 @@ body {
     padding-right: 32px;
   }
 }
-/* виправила правило бо падінги у tablet & desctop однакові, не потрібно дублювати */
+
 @media screen and (min-width: 1280px) {
   .container {
     max-width: 1280px;

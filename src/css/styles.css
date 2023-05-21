@@ -3,10 +3,17 @@
   | include css partials with
   | default @import url()
   |============================
-*/
+  
+  */
+
 @import url('./reset.css');
 
 @import url('./header.css');
+@import url('./howitworks.css');
+@import url('./fruits.css');
+@import url('./contacts.css');
+@import url('./footer.css');
+@import url('./modal-fruits.css');
 
 @import url('./burgermenu.css');
 
@@ -46,6 +53,7 @@ body {
   padding-right: 20px;
   padding-bottom: 80px;
 }
+
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -54,6 +62,7 @@ body {
     padding-right: 32px;
   }
 }
+
 @media screen and (min-width: 1280px) {
   .container {
     max-width: 1280px;

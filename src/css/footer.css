@@ -12,6 +12,7 @@
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
      .container-firsts {
+        display: flex;
         max-width: 768px;
         padding-left: 32px;
         padding-right: 32px;
@@ -31,16 +32,18 @@
     }
 @media screen and (min-width: 768px)  and (max-width: 1199px) {
     .container-two {
-       margin-left: auto;
+       flex-direction: column;
+       display: flex;
+       margin-right: auto;
     }
 }
 @media screen and (min-width: 768px)  and (max-width: 1199px) {
     .container-three {
-        margin-right: auto;
+       flex-direction: column;
+       display: flex;
+       padding-top: 48px;
     }
 }
-
-
 
 .container-vector {
         display: flex;

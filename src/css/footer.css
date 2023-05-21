@@ -29,22 +29,18 @@
         border-radius: 100px;
         margin-bottom: 20px;
     }
-/*@media screen and (min-width: 768px)  and (max-width: 1199px) {
+@media screen and (min-width: 768px)  and (max-width: 1199px) {
     .container-two {
-        margin-left: auto;
+       margin-left: auto;
     }
 }
 @media screen and (min-width: 768px)  and (max-width: 1199px) {
     .container-three {
         margin-right: auto;
     }
-}*/
-
-@media screen and (min-width: 768px)  and (max-width: 1199px) {
-    .container-vector {
-        margin-left: auto;
-    }
 }
+
+
 
 .container-vector {
         display: flex;

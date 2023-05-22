@@ -247,4 +247,10 @@
     line-height: 1.33;
     letter-spacing:-0.02em;
 }
-
+@media screen and (min-width: 1280px) {
+    .footer-contacts-list {
+        margin-bottom: 115px;
+    }
+    
+  }
+  

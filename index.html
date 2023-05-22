@@ -1,32 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/One-Step-Ahead/assets/logo-c76aed5e.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/One-Step-Ahead/assets/logo-c76aed5e.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
 
-    <title>On Step Ahead</title>
-    
-    <script type="module" crossorigin src="/One-Step-Ahead/assets/index-fd6172c4.js"></script>
-    <link rel="stylesheet" href="/One-Step-Ahead/assets/index-dcf6eb7d.css">
-  </head>
-  <body>
-    <div class="menu-container js-menu-container" id="mobile-menu">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>On Step Ahead</title>
+  
+  <script type="module" crossorigin src="/One-Step-Ahead/assets/index-fd6172c4.js"></script>
+  <link rel="stylesheet" href="/One-Step-Ahead/assets/index-4c01fe99.css">
+</head>
+
+<body>
+  <div class="menu-container js-menu-container" id="mobile-menu">
       <div class="mobile-burger-header">
         <div class="burger-vector-icon">
           <svg class="burger-vector" width="16" height="16">
@@ -68,7 +63,7 @@
         </li>
       </ul>
 
-    <header class="page-header">
+  <header class="page-header">
   <div class="container-header">
     <nav class="navigation">
       <ul class="nav-list">
@@ -91,7 +86,9 @@
       </button>
       </div>
       <div class="menu">
-      <button class="icon-menu">
+      <button class="icon-menu menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
         <svg width="24" height="24">
           <use href="../img/header/symbol-defs.svg#icon-menu"></use>
         </svg>
@@ -101,7 +98,7 @@
 </header>
 
 
-    <!-- 
+  <!-- 
 ##################################
     Section hero
 ##################################
@@ -230,7 +227,7 @@
  -->
 
 
-        <section class="container how-section">
+      <section class="container how-section">
         <div class="title-position">
             <h3 class="how-title">To order your fruit basket, simply follow these easy steps</h3>
             <p class="how-text">Our baskets are assembled with care and delivered straight to your doorstep, so you can
@@ -268,7 +265,7 @@
 
     </section>
 
-    <section class="fruits-section">
+  <section class="fruits-section">
   <div class="container">
     <h2 class="fruits-title">organic fruits</h2>
     <p class="fruits-text">
@@ -405,7 +402,7 @@
 </section>
 
 
-    <section class="contacts">
+  <section class="contacts">
     <div class="container">
         <h2 class="contacts-title"> Fresh Harvest Box has got you covered</h2>
 
@@ -469,120 +466,152 @@
 
 </section>
 
-    <!-- MODAL WINDOW -->
+  <!-- MODAL WINDOW -->
       <div class="backdrop is-hidden" data-modal>
-        <div class="modal">
-          <button class="modal-button" type="button" data-modal-close>
-            <svg class="modal-icon" width="24" height="24">
-              <use href="./images/icons.svg#icon-close"></use>
-            </svg>
-          </button>
-        <h2 class="modal-title">Your Order</h2>
-          <form name="order-form">
+          <div class="modal">
+            <button class="modal-button" type="button" data-modal-close>
+              <svg svg id="icon-close" viewBox="0 0 32 32" width="24" height="24">
+                <path fill="none" stroke="#ae1332" style="stroke: var(--color1, #ae1332)" stroke-linejoin="round" stroke-linecap="round"
+                  stroke-miterlimit="4" stroke-width="2.6667" d="M24 8l-16 16M8 8l16 16"></path>
+              </svg>
+            </button>
+            <h2 class="modal-title">Your Order</h2>
 
-            <label class="modal-check check-strawberry">
-              <h3 class="modal-fruits-title">Strawberry Basket</h3>
-              <p class="modal-under-title">Plant</p>
-              <img 
-              srcset="./img/modal-fruits/strawberry-basket_mobile.jpg 1x,
-              ./img/modal-fruits/strawberry-basket_mobile@2x.jpg 2x" 
-              src="./img/modal-fruits/strawberry-basket_mobile.jpg"              
-              alt="strawberry">
-              <input 
-              type="checkbox"
-              class="modal-form-choice"
-              name="user_choice"
-              >
-            </label>
+            <form name="order-form">
 
+              <div>
+                <div class="form-card form-card-strawberry">
+                  <label class="strawberry-label">
+                    <div class="form-info">
+                      <h3 class="modal-fruits-title">Strawberry Basket</h3>
+                      <p class="modal-under-title">Plant</p>
+                    </div>
 
-            <label class="modal-check check-apple">
-              <h3 class="modal-fruits-title">Apple Basket</h3>
-              <p class="modal-under-title">Plant</p>
-              <img
-              srcset="data:image/jpeg;base64,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 1x, /One-Step-Ahead/assets/fruits-bag_mobile@2x-8356bc64.jpg 2x" 
-              src="data:image/jpeg;base64,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"
-              alt="apple"               
-              >
-              <input type="checkbox"
-              class="modal-form-choice"
-              name="user_choice"
-              >
-            </label>
+                    <div class="picture picture-strawberry">
+                      <img 
+                      srcset="./img/modal-fruits/strawberry-basket_mob.png 1x,
+                      ./img/modal-fruits/strawberry-basket_mob@2x.png 2x" 
+                      src="./img/modal-fruits/strawberry-basket_mob.png"              
+                      alt="strawberry"
+                      width="88"
+                      >
+                    </div>
+                    <input 
+                    type="checkbox"
+                    class="modal-form-choice"
+                    name="user_choice"
+                    >
+                    <span class="icon"></span>
+                </label>
+                </div>
 
-            
-            <label class="modal-check check-fruits-basket">
-              <h3 class="modal-fruits-title">Fruits Basket</h3>
-              <p class="modal-under-title">Plant</p>
-              <img
-              srcset="data:image/jpeg;base64,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 1x, /One-Step-Ahead/assets/fruits-plate_mobile@2x-e52c8f83.jpg 2x" 
-              src="data:image/jpeg;base64,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" 
-              alt="fruits"
-              >
-              <input type="checkbox"
-              class="modal-form-choice"
-              name="user_choice"
-              >
-            </label>
+                <div class="form-card form-card-apple">
+                  <label class="apple-label">
+                    <div class="form-info">
+                      <h3 class="modal-fruits-title">Apple Basket</h3>
+                      <p class="modal-under-title">Plant</p>
+                    </div>
 
-            <label class="modal-form-label-box"> 
-              <div class="modal-form-field">
-                <input 
-                class="modal-form-input" 
-                type="text" 
-                name="user_name" 
-                minlength="2"
-                placeholder="Enter full name..."
-                required 
-                />
+                    <div class="picture picture-apple">
+                      <img
+                      srcset="./img/modal-fruits/fruits-bag_mob.png 1x,
+                      ./img/modal-fruits/fruits-bag_mob@2x.png 2x" 
+                      src="./img/modal-fruits/fruits-bag_mob.png"
+                      alt="apple"
+                      width="106"               
+                      >
+                    </div>
+                    <input type="checkbox"
+                    class="modal-form-choice"
+                    name="user_choice"
+                    >
+                    <span class="icon"></span>
+                  </label>
+                </div>
+                <div class="form-card form-card-fruits">            
+                  <label class="fruits-label">
+                    <div class="form-info">
+                      <h3 class="modal-fruits-title">Fruits Basket</h3>
+                      <p class="modal-under-title">Plant</p>
+                    </div>
+                    <div class="picture picture-fruits">
+                      <img
+                      srcset="./img/modal-fruits/fruits-plate_mob.png 1x,
+                      ./img/modal-fruits/fruits-plate_mob@2x.png 2x" 
+                      src="./img/modal-fruits/fruits-plate_mob.png" 
+                      alt="fruits"
+                      width="107"
+                      >
+                    </div>
+                    <input type="checkbox"
+                    class="modal-form-choice"
+                    name="user_choice"
+                    >
+                    <span class="icon"></span>
+                  </label>
+                </div>
               </div>
-            </label>
-
-
-            <label class="modal-form-label-box"> 
+              
               <div class="modal-form-field">
-                <input 
-                class="modal-form-input" 
-                type="email" 
-                name="user_email"
-                placeholder="Enter email..."
-                required 
-                />
-              </div>
-            </label>
+                <label class="modal-form-label-box"> 
+                  <div>
+                    <input 
+                    class="modal-form-input" 
+                    type="text" 
+                    name="user_name" 
+                    minlength="2"
+                    placeholder="Enter full name..."
+                    required 
+                    />
+                  </div>
+                </label>
+
+                
+                <label class="modal-form-label-box"> 
+                  <div>
+                    <input 
+                    class="modal-form-input" 
+                    type="email"
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" 
+                    name="user_email"
+                    placeholder="Enter email..."
+                    required 
+                    />
+                  </div>
+                </label>
 
 
-            <label class="modal-form-label-box">
-              <div class="modal-form-field">
-                <input 
-                class="modal-form-input" 
-                type="tel" 
-                inputmode="numeric" 
-                pattern="[0-9\s]{13,19}"
-                name="user_phone"
-                placeholder="Enter card.." 
-                required />
-              </div>
-            </label>
+                <label class="modal-form-label-box">
+                  <div>
+                    <input 
+                    class="modal-form-input" 
+                    type="tel" 
+                    inputmode="numeric" 
+                    pattern="[0-9\s]{13,19}"
+                    name="user_phone"
+                    placeholder="Enter card.." 
+                    required />
+                  </div>
+                </label>
 
 
-            <label class="modal-form-text">
-              <textarea 
-                class="modal-form-massage" 
-                name="user_massage" 
-                rows="5" 
-                placeholder="Enter comments...">
-              </textarea>
-            </label>
-            
-            <button class="order-button" type="submit">Submit</button>
-
+                <label class="modal-form-text">
+                  <textarea 
+                    class="modal-form-massage" 
+                    name="user_massage" 
+                    rows="5" 
+                    placeholder="Enter comments...">
+                  </textarea>
+                </label>
+                
+              <button class="order-button" type="submit">Submit</button>
+            </div>
           </form>
       
-        </div>
       </div>
+    </div>
 
-    <footer class="footer-container-organic">
+  <footer class="footer-container-organic">
     
     <div class="container-firsts">
         <div class="container-two">
@@ -640,7 +669,7 @@
 
 </footer>
 
-    <div class="modal overlay js-overlay-modal" data-modal="2">
+  <div class="modal overlay js-overlay-modal" data-modal="2">
 
   <button class="modal-thank-close js-close-modal" type="button">
     <svg class="modal-thank-close-icon" width="28" height="28">
@@ -672,45 +701,9 @@
 
 </div>
 
-    <!-- Элементы для вызова модальных окон, могут быть любые -->
+  ENOENT: no such file or directory, open '/home/runner/work/One-Step-Ahead/One-Step-Ahead/src/partials/modal.html'
 
-<a href="#" class="js-open-modal" data-modal="1">Открыть окно 1</a>
-<a href="#" class="js-open-modal" data-modal="2">Открыть окно 2</a>
+  
+</body>
 
-<!-- Несколько модальных окон -->
-
-<div class="modal" data-modal="1">
-  <!--   Svg иконка для закрытия окна  -->
-  <svg
-    class="modal__cross js-modal-close"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-  >
-    <path
-      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
-    />
-  </svg>
-  <p class="modal__title">Заголовок окна 1</p>
-</div>
-
-<div class="modal" data-modal="2">
-  <!--   Svg иконка для закрытия окна  -->
-  <svg
-    class="modal__cross js-modal-close"
-    xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 24 24"
-  >
-    <path
-      d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"
-    />
-  </svg>
-  <p class="modal__title">Заголовок окна 2</p>
-</div>
-
-<!-- Подложка под модальным окном -->
-<div class="overlay js-overlay-modal"></div>
-
-
-    
-  </body>
 </html>

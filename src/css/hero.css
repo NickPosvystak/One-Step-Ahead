@@ -207,27 +207,38 @@
   left: 39%;
   top: 365px;
   z-index: 200;
+
+  transition: color, 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media only screen and (min-width: 375px) {
   .hero-btn {
     font-size: 28px;
-    top: 24%;
+    top: 22%;
     width: 114px;
     height: 114px;
   }
 }
 @media only screen and (min-width: 768px) {
   .hero-btn {
-    top: 34%;
-    left: 44%;
+    top: 666px;
+    left: 43%;
   }
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  color: var(--fourth-color);
 }
 .btn-text {
   display: block;
   text-align: center;
   width: 55px;
-  margin: 14px 16px;
+  margin: auto;
   transform: rotate(-14deg);
+}
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .btn-text {
+    margin: 16px 18px;
+  }
 }
 @media only screen and (min-width: 768px) {
   .btn-text {

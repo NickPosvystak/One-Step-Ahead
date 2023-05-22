@@ -91,6 +91,14 @@
   gap: 14px;
 }
 
+@media screen and (min-width: 768px) {
+  .how-card {
+    width: 389px;
+    height: 128px;
+    gap: 24px;
+  }
+}
+
 .first-step {
   padding: 12px 31px;
   width: 136px;

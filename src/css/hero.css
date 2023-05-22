@@ -20,8 +20,12 @@
   }
 }
 .hero-container {
-  display: block;
+  /* display: block; */
+  display: flex;
+  flex-wrap: wrap;
   position: relative;
+  justify-content: center;
+  gap: 79px;
 }
 .hero-img {
   object-fit: cover;
@@ -128,8 +132,8 @@
 @media only screen and (min-width: 1280px) {
   .banana-img {
     width: 183px;
-    top: 89px;
-    left: 20%;
+    top: 95px;
+    left: 15%;
   }
 }
 
@@ -288,6 +292,7 @@
 
   min-width: 267px;
 }
+
 @media only screen and (min-width: 768px) {
   .description-box {
     flex-direction: row;
@@ -325,10 +330,12 @@
   padding-bottom: 40px;
   border: none;
   border-radius: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .green {
   background-color: var(--fourth-color);
-  margin-bottom: 44px;
+  /* margin-bottom: 44px; */
 }
 .yellow {
   background-color: var(--fifth-color);
@@ -446,12 +453,19 @@
   }
 }
 @media only screen and (min-width: 1280px) {
-  .hero-item-yellow {
-    /* position: absolute; */
-    /* top: 336px; */
-    /* right: 62px; */
-    display: flex;
-    flex-wrap: wrap;
+  .hero-container {
+    flex-wrap: nowrap;
+  }
+  .green-block {
+    order: -1;
+    margin-top: 408px;
+  }
+  .yellow-block {
+    margin-top: 408px;
+  }
+  .hero-btn {
+    top: 625px;
+    left: 48%;
   }
 }
 
@@ -463,6 +477,7 @@
 }
 @media only screen and (min-width: 768px) {
   .green-block {
+    margin-right: 63px;
   }
 }
 .yellow-block {

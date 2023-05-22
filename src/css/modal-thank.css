@@ -1,23 +1,122 @@
-.modal-thank {
-    width: 600px;
-    height: 545px;
-    background-color: var(--first-color);
-   
-    border-radius: 20px;
-}
-.modal-thank-close {
-    padding: 7px;
-    border: none;
-    cursor: pointer;
-}
-.modal-thank-close-icon {
-    fill: var(--second-color);
-}
 .modal-thank-title {
+    margin-top: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
     font-size: 40px;
     text-transform: uppercase;
+    color: #ffffff;
 }
+
 .modal-thank-text {
-   font-size: 14px;
-   text-shadow: 0px 4px 70px rgba(0 0 0 0.1);
+    margin-top: 14px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 14px;
+    color: #ffffff;
+    text-shadow: 0px 4px 70px rgba(0 0 0 0.1);
+}
+
+.modal-thank-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 28px;
+    height: 28px;
+    padding: 7px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+}
+
+.modal-thank-close-icon {
+    stroke: var(--second-color);
+
+
+}
+
+@media screen and (max-width: 375px) {
+    .modal-thank {
+        max-width: 335px;
+        max-height: 426px;
+    }
+}
+
+.modal-thank-container {
+    /* position: fixed; */
+    width: 600px;
+    height: 545px;
+    padding: 68px 104px 80px 104px;
+    background-color: rgba(224, 63, 94, 1);
+    border-radius: 20px;
+
+}
+
+.modal-thank-img {
+    background-color: rgba(224, 63, 94, 1);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+.overlay {
+
+    /* Скрываем подложку  */
+    opacity: 0;
+    visibility: hidden;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 20;
+    transition: .3s all;
+}
+
+
+/* Стили для модальных окон */
+
+.modal {
+
+    position: fixed;
+    width: 335px;
+    height: 426px;
+    padding: 68px 104px 80px 104px;
+    background-color: rgba(224, 63, 94, 1);
+    border-radius: 20px;
+
+    opacity: 0;
+    visibility: hidden;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+    /* Должен быть выше чем у подложки*/
+
+    /*  Побочные стили   */
+    box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2);
+    text-align: center;
+    transition: 0.3s all;
+}
+
+@media screen and (min-width: 768px) {
+    .modal {
+        width: 600px;
+        height: 545px;
+
+    }
+}
+
+
+
+
+.modal.active,
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
 }

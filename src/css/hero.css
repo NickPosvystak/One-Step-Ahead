@@ -185,6 +185,13 @@
   }
 }
 
+.link {
+  padding: 0;
+  margin: 0;
+  display: inline;
+  border: none;
+}
+
 .hero-btn {
   font-weight: 500;
   font-size: 20px;
@@ -227,6 +234,7 @@
 .hero-btn:hover,
 .hero-btn:focus {
   color: var(--fourth-color);
+  border: none;
 }
 .btn-text {
   display: block;

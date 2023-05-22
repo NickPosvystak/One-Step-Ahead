@@ -23,6 +23,17 @@ font-weight: 400;
 font-size: 14px;
 line-height: 1.29;
 }
+@media screen and (max-width: 767px) {
+  .nav-list {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .nav-list {
+    margin-right: 94px;
+  }
+}
+
 .description-icon{
  margin-right: 8px;
 }
@@ -37,9 +48,46 @@ line-height: 1.29;
     flex-direction:row;
     padding-right: 11px;
 }
-.icon-button {
+@media screen and (max-width: 767px) {
+  .basket {
+    display: none;
+  }
+}
+.icon-button,
+.icon-menu {
   background: none;
   border: none;
   padding: 0;
   cursor: pointer;
+}
+.menu{
+   display:none;
+}
+@media (max-width: 767px) {
+  .menu {
+    display: block; 
+  }
+}
+/* Mobile menu */
+ 
+.menu-toggle {
+  min-height: 32px;
+  min-width: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+.mobile-menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-bottom: auto;
 }

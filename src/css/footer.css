@@ -24,11 +24,7 @@
         
 }
 }
-@media screen and (min-width: 1280px) {
-    .footer-about-contacts {
-        padding: 50px;
-    }
-}
+
 @media screen and (min-width: 1280px) {
 
     .container-firsts {
@@ -46,20 +42,39 @@
         border-radius: 100px;
         margin-bottom: 20px;
     }
-@media screen and (min-width: 768px) {
+
+    .footer-main-img {
+        height: 217px;
+    }
+    @media screen and (max-width: 767px) {
+        .footer-main-img {
+            height: 100%;
+        }
+    }
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     .container-two {
        flex-direction: column;
        display: flex;
        margin-right: auto;
     }
 }
+@media screen and (min-width: 1280px) {
+    .container-two {
+        display: flex;
+    }
+}
 
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     .container-three {
        flex-direction: column;
        display: flex;
-       padding-top: 48px;
+       
+    }
+}
+@media screen and (min-width: 1280px) {
+    .container-three {
+        margin-left: auto;
     }
 }
 
@@ -108,9 +123,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 24px;
+    
 }
-
+@media screen and (max-width: 767px) {
+    .footer-about-contacts {
+        margin-bottom: 44px;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .footer-about-contacts {
+        justify-content: space-between;
+        margin-left: 232px;
+    }
+}
 
 .footer-contacts-list {
     display: flex;
@@ -146,7 +171,7 @@
     justify-content: center;
     margin-bottom: 24px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
     .container-footer-social {
         margin-bottom: 44px;
     }
@@ -158,7 +183,12 @@
     display: flex;
     gap: 20px;
 }
-
+@media screen and (min-width: 767px) {
+    .footer-contacts-list {
+        gap: 20px;
+    }
+    
+}
 .footer-item {
     display: flex;
     align-items: center;
@@ -181,7 +211,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 24px;
+    
+    
+}
+@media screen and (max-width: 767px) {
+    .address-container-contacts {
+     margin-bottom: 24px;
+    }
     
 }
 .address-list {
@@ -191,6 +227,12 @@
     display: flex;
     gap: 20px;
     flex-direction: column;
+}
+@media screen and (min-width: 767px) {
+    .address-list {
+        gap: 20px;
+    }
+    
 }
 .address-item {
     display: flex;
@@ -205,3 +247,4 @@
     line-height: 1.33;
     letter-spacing:-0.02em;
 }
+

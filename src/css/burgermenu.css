@@ -4,8 +4,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   padding-top: 174px;
   /* padding-right: 148px;
   padding-bottom: 620px;
@@ -122,9 +122,6 @@
 
 .mobile-menu-items {
   color: #fff;
-  text-decoration: none;
-
-  font-family: 'DM Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;

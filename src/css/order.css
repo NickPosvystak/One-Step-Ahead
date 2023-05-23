@@ -61,6 +61,7 @@
     background-image: url(../img/modal-fruits/background_tab.jpg);
     background-repeat: no-repeat;
     background-position: right bottom;
+    background-size: 301px 467px;
   }
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -69,6 +70,7 @@
         background-image: url(../img/modal-fruits/background_tab@2x.jpg);
         background-repeat: no-repeat;
         background-position: right bottom;
+        background-size: 301px 467px;
       }
     }
 }

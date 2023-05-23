@@ -15,13 +15,13 @@
 @import url('./contacts.css');
 @import url('./modalthankyou.css');
 @import url('./footer.css');
-@import url('./modal-fruits.css');
-@import url('./modal.css');
-/* @import url('./burgermenu.css'); */
+@import url('./order.css');
+/* @import url('./modal-fruits.css'); */
+/* @import url('./modal.css'); */
+@import url('./burgermenu.css');
 
 /* Colors */
 :root {
-  
   --first-color: #ae1332;
   --second-color: #ffffff;
   --third-color: #000000;
@@ -50,7 +50,6 @@ body {
 
   margin-right: auto;
   margin-left: auto;
-
   padding-left: 20px;
   padding-right: 20px;
 
@@ -67,7 +66,7 @@ body {
     padding-right: 32px;
   }
 }
-
+/* виправила правило бо падінги у tablet & desctop однакові, не потрібно дублювати */
 @media screen and (min-width: 1280px) {
   .container {
     max-width: 1280px;

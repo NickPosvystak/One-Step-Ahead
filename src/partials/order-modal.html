@@ -1,6 +1,6 @@
 <!-- MODAL WINDOW -->
       <div class="backdrop is-hidden" data-modal>
-          <div class="modal-container">
+          <div class="modal-container modal-window">
             <button class="modal-button" type="button" data-modal-close>
               <svg svg id="icon-close" viewBox="0 0 32 32" width="24" height="24">
                 <path fill="none" stroke="#ae1332" style="stroke: var(--color1, #ae1332)" stroke-linejoin="round" stroke-linecap="round"
@@ -21,6 +21,7 @@
 
                     <div class="picture picture-strawberry">
                       <img 
+                      class="strawberry-imaging"
                       srcset="./img/modal-fruits/strawberry-basket_mob.png 1x,
                       ./img/modal-fruits/strawberry-basket_mob@2x.png 2x" 
                       src="./img/modal-fruits/strawberry-basket_mob.png"              
@@ -46,14 +47,14 @@
 
                     <div class="picture picture-apple">
                       <img
+                      class="apple-img"
                       srcset="
-                      ./img/modal-fruits/fruits-bag_mob.png 106w,
-                      ./img/modal-fruits/apple_172.png 172w,
-                      ./img/modal-fruits/fruits-bag_mob@2x.png 212w,
-                      ./img/modal-fruits/apple_344.png 344w" 
+                      ./img/modal-fruits/fruits-bag_mob.png 1x,
+                      ./img/modal-fruits/fruits-bag_mob@2x.png 2x"
                       src="./img/modal-fruits/fruits-bag_mob.png"
                       alt="apple"
-                      width="106"               
+                      width="229"
+                      height="196"             
                       >
                     </div>
                     <input type="checkbox"
@@ -71,6 +72,7 @@
                     </div>
                     <div class="picture picture-fruits">
                       <img
+                      class="plate-imaging"
                       srcset="./img/modal-fruits/fruits-plate_mob.png 1x,
                       ./img/modal-fruits/fruits-plate_mob@2x.png 2x" 
                       src="./img/modal-fruits/fruits-plate_mob.png" 
@@ -131,11 +133,12 @@
 
 
                 <label class="modal-form-text">
-                  <textarea 
+                  <textarea
                     class="modal-form-massage" 
                     name="user_massage" 
                     rows="5" 
-                    placeholder="Enter comments...">
+                    placeholder="Enter comments..."
+                    >
                   </textarea>
                 </label>
                 

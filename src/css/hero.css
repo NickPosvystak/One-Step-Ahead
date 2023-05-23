@@ -68,7 +68,7 @@
 }
 
 .hero-main::before {
-  content: url(../img/hero-img/banana_m_86x72@1x.webp);
+  content: url(./img/hero-img/banana_m_86x72@1x.webp);
   padding-top: 98px;
   padding-left: 0;
   /* transform-origin: 0 0;
@@ -78,21 +78,21 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero-main::before {
-    content: url(../img/hero-img/banana_m_171x144@2x.webp);
+    content: url(./img/hero-img/banana_m_171x144@2x.webp);
     padding-top: 98px;
     padding-left: 0;
   }
 }
 
 .hero-main::after {
-  content: url(../img/hero-img/strawberry_m_64x64@1x.webp);
+  content: url(./img/hero-img/strawberry_m_64x64@1x.webp);
   text-align: right;
 }
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero-main::after {
-    content: url(../img/hero-img/strawberry_m_128x128@2x.webp);
+    content: url(./img/hero-img/strawberry_m_128x128@2x.webp);
     padding-top: 98px;
     padding-left: 0;
   }

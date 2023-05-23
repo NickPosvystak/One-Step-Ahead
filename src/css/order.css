@@ -1,3 +1,5 @@
+/* MODAL WINDOW */
+
 .backdrop {
   z-index: 100000;
   position: fixed;
@@ -50,21 +52,46 @@
   }
 }
 
-@media only screen and (min-width: 768px) {
-  .modal-window {
+.modal-window{
+  background-image: none;
+}
+
+@media only screen and (min-width: 768px){
+  .modal-window{
     background-image: url(../img/modal-fruits/background_tab.jpg);
     background-repeat: no-repeat;
     background-position: right bottom;
   }
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      .modal-window{
+        background-image: url(../img/modal-fruits/background_tab@2x.jpg);
+        background-repeat: no-repeat;
+        background-position: right bottom;
+      }
+    }
 }
 
-@media only screen and (min-width: 1280px) {
-  .modal-window {
+@media only screen and (min-width: 1280px){
+  .modal-window{
     background-image: url(../img/modal-fruits/modal-img_desk.jpg);
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: 471px 458px;
   }
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .modal-window{
+    background-image: url(../img/modal-fruits/modal-img_desk@2x.jpg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 471px 458px;
+
+  }
+ }
 }
 
 .modal-button {
@@ -169,20 +196,20 @@
   margin-bottom: 8px;
 }
 
-.strawberry-imaging {
+.strawberry-imaging{
   width: 88px;
   height: 95px;
 }
 
-@media only screen and (min-width: 768px) {
-  .strawberry-imaging {
+@media only screen and (min-width: 768px){
+  .strawberry-imaging{
     width: 133px;
     height: 148px;
   }
 }
 
-@media only screen and (min-width: 1280px) {
-  .strawberry-imaging {
+@media only screen and (min-width: 1280px){
+  .strawberry-imaging{
     width: 173px;
     height: 196px;
   }
@@ -248,13 +275,13 @@
   margin-left: 5px;
 }
 
-@media only screen and (min-width: 768px) {
-  .picture-strawberry {
+@media only screen and (min-width: 768px){
+  .picture-strawberry{
     margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 14px;
-  }
+}
 }
 
 .form-card-apple {
@@ -272,8 +299,8 @@
   margin-left: 30px;
 }
 
-@media only screen and (min-width: 768px) {
-  .picture-apple {
+@media only screen and (min-width: 768px){
+  .picture-apple{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 14px;
@@ -282,20 +309,20 @@
 }
 
 
-.apple-img {
+.apple-img{
   width: 106px;
   height: 95px;
 }
 
-@media only screen and (min-width: 768px) {
-  .apple-img {
+@media only screen and (min-width: 768px){
+  .apple-img{
     width: 172px;
     height: 148px;
   }
 }
 
-@media only screen and (min-width: 1280px) {
-  .apple-img {
+@media only screen and (min-width: 1280px){
+  .apple-img{
     width: 229px;
     height: 196px;
   }
@@ -330,8 +357,8 @@
   margin-left: 30px;
 }
 
-@media only screen and (min-width: 768px) {
-  .picture-fruits {
+@media only screen and (min-width: 768px){
+  .picture-fruits{
     margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
@@ -339,22 +366,20 @@
   }
 }
 
-
-
-.plate-imaging {
+.plate-imaging{
   width: 107px;
   height: 95px;
 }
 
-@media only screen and (min-width: 768px) {
-  .plate-imaging {
+@media only screen and (min-width: 768px){
+  .plate-imaging{
     width: 172px;
     height: 148px;
   }
 }
 
-@media only screen and (min-width: 1280px) {
-  .plate-imaging {
+@media only screen and (min-width: 1280px){
+  .plate-imaging{
     width: 229px;
     height: 196px;
   }
@@ -381,8 +406,8 @@
   letter-spacing: -0.02em;
 }
 
-@media only screen and (min-width: 768px) {
-  .modal-form-field {
+@media only screen and (min-width: 768px){
+  .modal-form-field{
     margin-right: auto;
     width: 360px;
   }
@@ -424,9 +449,10 @@
   background-origin: border-box;
 }
 
-.modal-form-massage {
+.modal-form-message {
   width: 100%;
   font-size: 14px;
+  line-height: 1.29;
   color: #000000;
   min-height: 132px;
 
@@ -435,8 +461,8 @@
   border-radius: 20px;
 }
 
-@media only screen and (min-width: 768px) {
-  .modal-form-message {
+@media only screen and (min-width: 768px){
+  .modal-form-message{
     min-height: 145px;
   }
 }

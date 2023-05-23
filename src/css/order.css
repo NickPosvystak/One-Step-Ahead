@@ -1,4 +1,5 @@
 .backdrop {
+  z-index: 10000;
   position: fixed;
   top: 0;
   left: 0;
@@ -46,6 +47,23 @@
 @media only screen and (min-width: 1280px) {
   .modal-container {
     width: 891px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-window {
+    background-image: url(../img/modal-fruits/background_tab.jpg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .modal-window {
+    background-image: url(../img/modal-fruits/modal-img_desk.jpg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 471px 458px;
   }
 }
 
@@ -137,6 +155,7 @@
 .form-info {
   padding-top: 20px;
   padding-left: 20px;
+  margin-bottom: 4px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -148,6 +167,25 @@
 .picture {
   margin-top: 16px;
   margin-bottom: 8px;
+}
+
+.strawberry-imaging {
+  width: 88px;
+  height: 95px;
+}
+
+@media only screen and (min-width: 768px) {
+  .strawberry-imaging {
+    width: 133px;
+    height: 148px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .strawberry-imaging {
+    width: 173px;
+    height: 196px;
+  }
 }
 
 .strawberry-label {
@@ -198,6 +236,8 @@
   }
 }
 
+
+
 @media only screen and (min-width: 1280px) {
   .apple-label {
     height: 308px;
@@ -210,7 +250,10 @@
 
 @media only screen and (min-width: 768px) {
   .picture-strawberry {
-    margin: 4px 14px 14px;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 14px;
   }
 }
 
@@ -229,6 +272,35 @@
   margin-left: 30px;
 }
 
+@media only screen and (min-width: 768px) {
+  .picture-apple {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 14px;
+    margin-top: 0px;
+  }
+}
+
+
+.apple-img {
+  width: 106px;
+  height: 95px;
+}
+
+@media only screen and (min-width: 768px) {
+  .apple-img {
+    width: 172px;
+    height: 148px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .apple-img {
+    width: 229px;
+    height: 196px;
+  }
+}
+
 .icon {
   position: absolute;
   top: 14px;
@@ -239,7 +311,7 @@
   height: 16px;
   background-color: transparent;
 
-  border: 1.5px solid #ffffff;
+  border: 1.5px solid var(--second-color);
   border-radius: 4px;
 }
 
@@ -256,6 +328,36 @@
 
 .picture-fruits {
   margin-left: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  .picture-fruits {
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 14px;
+  }
+}
+
+
+
+.plate-imaging {
+  width: 107px;
+  height: 95px;
+}
+
+@media only screen and (min-width: 768px) {
+  .plate-imaging {
+    width: 172px;
+    height: 148px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .plate-imaging {
+    width: 229px;
+    height: 196px;
+  }
 }
 
 .modal-fruits-title {
@@ -281,6 +383,7 @@
 
 @media only screen and (min-width: 768px) {
   .modal-form-field {
+    margin-right: auto;
     width: 360px;
   }
 }
@@ -315,7 +418,7 @@
   appearance: none;
 }
 
-.modal-form-choice:checked + .icon {
+.modal-form-choice:checked+.icon {
   background-image: url('../img/icon/check.svg');
   background-size: contain;
   background-origin: border-box;
@@ -325,10 +428,17 @@
   width: 100%;
   font-size: 14px;
   color: #000000;
+  min-height: 132px;
 
   resize: none;
   padding: 14px 24px;
   border-radius: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-form-message {
+    min-height: 145px;
+  }
 }
 
 .modal-form-text {

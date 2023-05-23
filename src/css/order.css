@@ -1,4 +1,7 @@
+/* MODAL WINDOW */
+
 .backdrop {
+  z-index: 10000;
   position: fixed;
   top: 0;
   left: 0;
@@ -49,12 +52,25 @@
   }
 }
 
+.modal-window{
+  background-image: none;
+}
+
 @media only screen and (min-width: 768px){
   .modal-window{
     background-image: url(../img/modal-fruits/background_tab.jpg);
     background-repeat: no-repeat;
     background-position: right bottom;
   }
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      .modal-window{
+        background-image: url(../img/modal-fruits/background_tab@2x.jpg);
+        background-repeat: no-repeat;
+        background-position: right bottom;
+      }
+    }
 }
 
 @media only screen and (min-width: 1280px){
@@ -64,6 +80,18 @@
     background-position: right bottom;
     background-size: 471px 458px;
   }
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+  .modal-window{
+    background-image: url(../img/modal-fruits/modal-img_desk@2x.jpg);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 471px 458px;
+
+  }
+ }
 }
 
 .modal-button {
@@ -421,9 +449,10 @@
   background-origin: border-box;
 }
 
-.modal-form-massage {
+.modal-form-message {
   width: 100%;
   font-size: 14px;
+  line-height: 1.29;
   color: #000000;
   min-height: 132px;
 

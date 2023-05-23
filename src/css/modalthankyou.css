@@ -28,6 +28,10 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -37,22 +41,7 @@
 
 }
 
-@media screen and (max-width: 375px) {
-    .modal-thank {
-        max-width: 335px;
-        max-height: 426px;
-    }
-}
 
-.modal-thank-container {
-    /* position: fixed; */
-    width: 600px;
-    height: 545px;
-    padding: 68px 104px 80px 104px;
-    background-color: rgba(224, 63, 94, 1);
-    border-radius: 20px;
-
-}
 
 .modal-thank-img {
     background-color: rgba(224, 63, 94, 1);
@@ -111,8 +100,6 @@
 
     }
 }
-
-
 
 
 .modal.active,

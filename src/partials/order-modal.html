@@ -144,7 +144,135 @@
                 
               <button class="order-button" type="submit">Submit</button>
             </div>
-          </form>
-      
+
+            <div class="picture picture-strawberry">
+              <img
+                srcset="
+                  ./img/modal-fruits/strawberry-basket_mob.png    1x,
+                  ./img/modal-fruits/strawberry-basket_mob@2x.png 2x
+                "
+                src="./img/modal-fruits/strawberry-basket_mob.png"
+                alt="strawberry"
+                width="88"
+              />
+            </div>
+            <input
+              type="checkbox"
+              class="modal-form-choice"
+              name="user_choice"
+            />
+            <span class="icon"></span>
+          </label>
+        </div>
+
+        <div class="form-card form-card-apple">
+          <label class="apple-label">
+            <div class="form-info">
+              <h3 class="modal-fruits-title">Apple Basket</h3>
+              <p class="modal-under-title">Plant</p>
+            </div>
+
+            <div class="picture picture-apple">
+              <img
+                srcset="
+                  ./img/modal-fruits/fruits-bag_mob.png    106w,
+                  ./img/modal-fruits/apple_172.png         172w,
+                  ./img/modal-fruits/fruits-bag_mob@2x.png 212w,
+                  ./img/modal-fruits/apple_344.png         344w
+                "
+                src="./img/modal-fruits/fruits-bag_mob.png"
+                alt="apple"
+                width="106"
+              />
+            </div>
+            <input
+              type="checkbox"
+              class="modal-form-choice"
+              name="user_choice"
+            />
+            <span class="icon"></span>
+          </label>
+        </div>
+        <div class="form-card form-card-fruits">
+          <label class="fruits-label">
+            <div class="form-info">
+              <h3 class="modal-fruits-title">Fruits Basket</h3>
+              <p class="modal-under-title">Plant</p>
+            </div>
+            <div class="picture picture-fruits">
+              <img
+                srcset="
+                  ./img/modal-fruits/fruits-plate_mob.png    1x,
+                  ./img/modal-fruits/fruits-plate_mob@2x.png 2x
+                "
+                src="./img/modal-fruits/fruits-plate_mob.png"
+                alt="fruits"
+                width="107"
+              />
+            </div>
+            <input
+              type="checkbox"
+              class="modal-form-choice"
+              name="user_choice"
+            />
+            <span class="icon"></span>
+          </label>
+        </div>
       </div>
-    </div>
+
+      <div class="modal-form-field">
+        <label class="modal-form-label-box">
+          <div>
+            <input
+              class="modal-form-input"
+              type="text"
+              name="user_name"
+              minlength="2"
+              placeholder="Enter full name..."
+              required
+            />
+          </div>
+        </label>
+
+        <label class="modal-form-label-box">
+          <div>
+            <input
+              class="modal-form-input"
+              type="email"
+              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              name="user_email"
+              placeholder="Enter email..."
+              required
+            />
+          </div>
+        </label>
+
+        <label class="modal-form-label-box">
+          <div>
+            <input
+              class="modal-form-input"
+              type="tel"
+              inputmode="numeric"
+              pattern="[0-9\s]{13,19}"
+              name="user_phone"
+              placeholder="Enter card.."
+              required
+            />
+          </div>
+        </label>
+
+        <label class="modal-form-text">
+          <textarea
+            class="modal-form-massage"
+            name="user_massage"
+            rows="5"
+            placeholder="Enter comments..."
+          >
+          </textarea>
+        </label>
+
+        <button class="order-button" type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+</div>

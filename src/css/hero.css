@@ -6,14 +6,6 @@
 .hero {
   padding-top: 12px;
   padding-bottom: 80px;
-  /*margin-left: auto;
-  margin-right: auto; */
-
-  /* background-image: url(../img/hero-img/main_m335@1x.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-position: 50% 0;
-  background-size: 335px 510px; */
 }
 
 @media only screen and (min-width: 768px) {
@@ -44,7 +36,7 @@
   margin-right: auto;
   margin-top: 117px;
 
-  background-image: url(../img/hero-img/woman_m_335x510@1x.png);
+  background-image: url(../img/hero-img/woman_m_335x510@1x.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-position: 50% 0;
@@ -55,6 +47,13 @@
   padding-top: 152.67%; /* (img-height / img-width * width) */
   /* (742 / 486 * 100) */
   /* https://stackoverflow.com/questions/600743/how-to-get-div-height-to-auto-adjust-to-background-size */
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-main {
+    background-image: url(../img/hero-img/woman_m_670x1020@2x.webp);
+  }
 }
 
 .hero-main:before,
@@ -75,23 +74,33 @@
   /* transform-origin: 0 0;
   transform: rotate(14deg); */
 }
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-main::before {
+    content: url(../img/hero-img/banana_m_171x144@2x.webp);
+    padding-top: 98px;
+    padding-left: 0;
+  }
+}
 
 .hero-main::after {
   content: url(../img/hero-img/strawberry_m_64x64@1x.webp);
   text-align: right;
 }
-
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
-  .hero-main {
-    background-image: url(../img/hero-img/woman_m_670x1020@2x.png);
+  .hero-main::after {
+    content: url(../img/hero-img/strawberry_m_128x128@2x.webp);
+    padding-top: 98px;
+    padding-left: 0;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .hero-main {
-    background-image: url(../img/hero-img/woman_td_486x742@1x.png);
+    background-image: url(../img/hero-img/woman_td_486x742@1x.webp);
     padding-top: 742px;
   }
 
@@ -103,14 +112,54 @@
   .hero-main::before {
     content: url(../img/hero-img/banana_t_170x144@1x.webp);
     top: 78px;
-    left: -9px;
+    left: 15px;
   }
   .hero-main::after {
     content: url(../img/hero-img/strawberry_t_124x124@1x.webp);
   }
 }
-@media only screen and (min-width: 1280px) {
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
   .hero-main {
+    content: url(../img/hero-img/main1_972@2x.webp);
+    padding-top: 742px;
+  }
+  .hero-main::before {
+    content: url(../img/hero-img/banana_t_339x288@2x.webp);
+  }
+  .hero-main::after {
+    content: url(../img/hero-img/strawberry_t_248x248@2x.webp);
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .hero-main::before {
+    content: url(../img/hero-img/banana_d_229x194@1x.webp);
+    top: 91px;
+    left: 19%;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-main::before {
+      content: url(../img/hero-img/banana_d_458x388@2x.webp);
+    }
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .hero-main::after {
+    content: url(../img/hero-img/strawberry_d_136x136@1x.webp);
+    top: 7px;
+    right: 14%;
+  }
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero-main::after {
+      content: url(../img/hero-img/strawberry_d_272x272@2.webp);
+    }
   }
 }
 
@@ -156,7 +205,8 @@
     display: block;
     font-size: 64px;
     line-height: 1;
-    left: 191px;
+    left: 40px;
+    top: 79px;
   }
   .hero-title-m {
     display: none;
@@ -222,6 +272,12 @@
     height: 114px;
     top: 55%;
     left: 43%;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .hero-btn {
+    top: 76%;
+    left: 49%;
   }
 }
 
@@ -458,10 +514,6 @@
   }
   .yellow-block {
     margin-top: 408px;
-  }
-  .hero-btn {
-    top: 625px;
-    left: 48%;
   }
 }
 

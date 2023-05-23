@@ -18,11 +18,11 @@
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* .backdrop.is-hidden {
+.backdrop.is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-} */
+}
 
 .modal-container {
   position: absolute;
@@ -263,6 +263,8 @@
   }
 }
 
+
+
 @media only screen and (min-width: 1280px) {
   .apple-label {
     height: 308px;
@@ -364,8 +366,6 @@
   }
 }
 
-
-
 .plate-imaging{
   width: 107px;
   height: 95px;
@@ -443,7 +443,7 @@
   appearance: none;
 }
 
-.modal-form-choice:checked + .icon {
+.modal-form-choice:checked+.icon {
   background-image: url('../img/icon/check.svg');
   background-size: contain;
   background-origin: border-box;

@@ -4,9 +4,26 @@
   |============================
 */
 .hero {
-  padding-top: 117px;
+  /* padding-top: 117px; */
   padding-bottom: 80px;
+  /*margin-left: auto;
+  margin-right: auto; */
+
+  /* background-image: url(../img/hero-img/main_m335@1x.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: 50% 0;
+  background-size: 335px 510px; */
 }
+/* @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../img/hero-img/main_m670@2x.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+} */
 @media only screen and (min-width: 768px) {
   .hero {
     padding-top: 122px;
@@ -27,26 +44,81 @@
   justify-content: center;
   gap: 79px;
 }
-.hero-img {
-  object-fit: cover;
 
-  background: linear-gradient(var(--first-color), var(--first-color))
-      padding-box,
-    linear-gradient(to bottom, var(--first-color) 30%, var(--second-color) 75%)
-      border-box;
-  border-radius: 50em;
-  border: 1px solid transparent;
-  padding: 28px 12px;
-
+.hero-main {
   display: block;
-  margin-right: auto;
+  padding-bottom: 80px;
   margin-left: auto;
-  margin-bottom: 58px;
+  margin-right: auto;
+  margin-top: 117px;
+
+  background-image: url(../img/hero-img/woman_m_335x510@1x.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: 50% 0;
+  /* background-size: 335px 510px; */
+  background-size: contain;
+  width: 100%;
+  height: 0;
+  padding-top: 152.67%; /* (img-height / img-width * width) */
+  /* (742 / 486 * 100) */
+  /* https://stackoverflow.com/questions/600743/how-to-get-div-height-to-auto-adjust-to-background-size */
 }
-@media only screen and (max-width: 767px) {
-  .hero-img {
-    margin-bottom: 59px;
-    padding: 28px 20px;
+
+.hero-main:before,
+.hero-main:after {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 43px;
+}
+
+.hero-main::before {
+  content: url(../img/hero-img/banana_m_86x72@1x.webp);
+  padding-top: 98px;
+  padding-left: 0;
+  /* transform-origin: 0 0;
+  transform: rotate(14deg); */
+}
+
+.hero-main::after {
+  content: url(../img/hero-img/strawberry_m_64x64@1x.webp);
+  text-align: right;
+}
+
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-main {
+    background-image: url(../img/hero-img/woman_m_670x1020@2x.png);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-main {
+    background-image: url(../img/hero-img/woman_td_486x742@1x.png);
+    padding-top: 742px;
+  }
+
+  .hero-main::before,
+  .hero-main::after {
+    top: 15px;
+    right: 25px;
+  }
+  .hero-main::before {
+    content: url(../img/hero-img/banana_t_170x144@1x.webp);
+    top: 78px;
+    left: -9px;
+  }
+  .hero-main::after {
+    content: url(../img/hero-img/strawberry_t_124x124@1x.webp);
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .hero-main {
   }
 }
 
@@ -63,21 +135,24 @@
   display: block;
   align-items: center;
   position: absolute;
-  top: -31px;
-  left: calc(50% - 335px / 2);
+  top: 53px;
+  left: calc(52% - 335px / 2);
   z-index: 200;
 }
 
 .hero-title-d-t {
   display: none;
+  width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
   .hero-title-d-t {
-    display: block;
+    display: inline;
     font-size: 50px;
     line-height: 1.1;
-    left: calc(50% - 704px / 2 - 4px);
+    /* left: calc(50% - 704px / 2 - 4px); */
+    left: 0;
+    top: 86px;
   }
   .hero-title-m {
     display: none;
@@ -109,68 +184,6 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.banana-img {
-  position: absolute;
-  top: 1%;
-  left: -10px;
-  z-index: 50;
-  transform: rotate(14deg);
-}
-
-@media only screen and (min-width: 375px) {
-  .banana-img {
-    top: 9px;
-    left: 9px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .banana-img {
-    top: 3%;
-    left: 0;
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .banana-img {
-    width: 183px;
-    top: 95px;
-    left: 15%;
-  }
-}
-
-.strawberry-img {
-  position: absolute;
-  top: -35px;
-  right: 3px;
-  z-index: 50;
-}
-@media only screen and (min-width: 321px) and (max-width: 374px) {
-  .strawberry-img {
-    width: 25%;
-    top: 0;
-    right: 27px;
-  }
-}
-@media only screen and (min-width: 375px) {
-  .strawberry-img {
-    width: 56px;
-    top: -2%;
-    right: 27px;
-  }
-}
-@media only screen and (min-width: 768px) {
-  .strawberry-img {
-    width: 108px;
-    top: -55px;
-    right: 47px;
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .strawberry-img {
-    width: 120px;
-    top: -60px;
-    right: 19%;
-  }
-}
 
 .link {
   padding: 0;
@@ -179,6 +192,7 @@
   border: none;
 }
 
+/* hero button */
 .hero-btn {
   font-weight: 500;
   font-size: 20px;
@@ -218,11 +232,13 @@
     left: 43%;
   }
 }
+
 .hero-btn:hover,
 .hero-btn:focus {
   color: var(--fourth-color);
   border: none;
 }
+
 .btn-text {
   display: block;
   text-align: center;
@@ -230,11 +246,13 @@
   margin: 16px 6px;
   transform: rotate(-14deg);
 }
+
 @media only screen and (min-width: 768px) {
   .btn-text {
     margin: 20px 17px;
   }
 }
+
 .hero-text {
   font-family: var(--primary-font);
   font-weight: 400;
@@ -273,14 +291,6 @@
   | fruit container style
   |============================
 */
-.description-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-right: auto;
-  margin-left: auto;
-}
 
 .titles-fruits {
   display: flex;
@@ -294,12 +304,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .description-box {
-    flex-direction: row;
-    align-items: flex-start;
-    width: 279px;
-    gap: 144px;
-  }
   .yellow {
     order: -1;
     margin-right: 32px;

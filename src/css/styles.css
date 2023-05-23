@@ -66,6 +66,7 @@ body {
     padding-right: 32px;
   }
 }
+
 /* виправила правило бо падінги у tablet & desctop однакові, не потрібно дублювати */
 @media screen and (min-width: 1280px) {
   .container {

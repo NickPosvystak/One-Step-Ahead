@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
          /* При каждом клике на кнопку мы будем забирать содержимое атрибута data-modal
             и будем искать модальное окно с таким же атрибутом. */
          var modalId = this.getAttribute('data-modal'),
-             modalElem = document.querySelector('.modal[data-modal="' + modalId + '"]');
+             modalElem = document.querySelector('.modal-th[data-modal="' + modalId + '"]');
 
 
          /* После того как нашли нужное модальное окно, добавим классы
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function() {
    closeButtons.forEach(function(item){
 
       item.addEventListener('click', function(e) {
-         var parentModal = this.closest('.modal');
+         var parentModal = this.closest('.modal-th');
 
          parentModal.classList.remove('active');
          overlay.classList.remove('active');
@@ -50,14 +50,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if (key == 27) {
 
-            document.querySelector('.modal.active').classList.remove('active');
+            document.querySelector('.modal-th.active').classList.remove('active');
             document.querySelector('.overlay').classList.remove('active');
         };
     }, false);
 
 
     overlay.addEventListener('click', function() {
-        document.querySelector('.modal.active').classList.remove('active');
+        document.querySelector('.modal-th.active').classList.remove('active');
         this.classList.remove('active');
     });
 

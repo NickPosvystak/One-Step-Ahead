@@ -29,6 +29,10 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -87,6 +91,17 @@
     transition: 0.3s all;
 }
 
+<<<<<<< Updated upstream
+=======
+@media screen and (min-width: 768px) {
+    .modal {
+        width: 600px;
+        height: 545px;
+
+    }
+}
+
+>>>>>>> Stashed changes
 
 .modal.active,
 .overlay.active {

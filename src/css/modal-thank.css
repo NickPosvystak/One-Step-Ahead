@@ -15,7 +15,6 @@
     text-align: center;
     font-size: 14px;
     color: #ffffff;
-    color: black;
     text-shadow: 0px 4px 70px rgba(0 0 0 0.1);
 }
 
@@ -29,19 +28,31 @@
     background-color: transparent;
     border: none;
     cursor: pointer;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
 }
 
 .modal-thank-close-icon {
     stroke: var(--second-color);
-    border: 2px solid black;
+
+
 }
 
+@media screen and (max-width: 375px) {
+    .modal-thank {
+        max-width: 335px;
+        max-height: 426px;
+    }
+}
 
+.modal-thank-container {
+    /* position: fixed; */
+    width: 600px;
+    height: 545px;
+    padding: 68px 104px 80px 104px;
+    background-color: rgba(224, 63, 94, 1);
+    border-radius: 20px;
+
+}
 
 .modal-thank-img {
     background-color: rgba(224, 63, 94, 1);
@@ -51,6 +62,8 @@
 
 
 .overlay {
+
+    /* Скрываем подложку  */
     opacity: 0;
     visibility: hidden;
 
@@ -70,8 +83,8 @@
 .modal {
 
     position: fixed;
-    width: 600px;
-    height: 545px;
+    width: 335px;
+    height: 426px;
     padding: 68px 104px 80px 104px;
     background-color: rgba(224, 63, 94, 1);
     border-radius: 20px;
@@ -91,8 +104,6 @@
     transition: 0.3s all;
 }
 
-<<<<<<< Updated upstream
-=======
 @media screen and (min-width: 768px) {
     .modal {
         width: 600px;
@@ -101,7 +112,8 @@
     }
 }
 
->>>>>>> Stashed changes
+
+
 
 .modal.active,
 .overlay.active {

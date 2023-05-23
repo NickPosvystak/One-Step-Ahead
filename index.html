@@ -484,24 +484,17 @@
 
     <!-- MODAL WINDOW -->
 <div class="backdrop is-hidden" data-modal>
-  <div class="modal-container">
+  <div class="modal-container modal-window">
     <button class="modal-button" type="button" data-modal-close>
       <svg svg id="icon-close" viewBox="0 0 32 32" width="24" height="24">
-        <path
-          fill="none"
-          stroke="#ae1332"
-          style="stroke: var(--color1, #ae1332)"
-          stroke-linejoin="round"
-          stroke-linecap="round"
-          stroke-miterlimit="4"
-          stroke-width="2.6667"
-          d="M24 8l-16 16M8 8l16 16"
-        ></path>
+        <path fill="none" stroke="#ae1332" style="stroke: var(--color1, #ae1332)" stroke-linejoin="round"
+          stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M24 8l-16 16M8 8l16 16"></path>
       </svg>
     </button>
     <h2 class="modal-title">Your Order</h2>
 
     <form name="order-form">
+
       <div class="form-check-cards">
         <div class="form-card form-card-strawberry">
           <label class="strawberry-label">
@@ -511,18 +504,10 @@
             </div>
 
             <div class="picture picture-strawberry">
-              <img
-                srcset="/One-Step-Ahead/assets/strawberry-basket_mob-2ca7f40f.png 1x, /One-Step-Ahead/assets/strawberry-basket_mob@2x-542554e1.png 2x"
-                src="/One-Step-Ahead/assets/strawberry-basket_mob-2ca7f40f.png"
-                alt="strawberry"
-                width="88"
-              />
+              <img class="strawberry-imaging" srcset="/One-Step-Ahead/assets/strawberry-basket_mob-2ca7f40f.png 1x, /One-Step-Ahead/assets/strawberry-basket_mob@2x-542554e1.png 2x"
+                src="/One-Step-Ahead/assets/strawberry-basket_mob-2ca7f40f.png" alt="strawberry" width="88">
             </div>
-            <input
-              type="checkbox"
-              class="modal-form-choice"
-              name="user_choice"
-            />
+            <input type="checkbox" class="modal-form-choice" name="user_choice">
             <span class="icon"></span>
           </label>
         </div>
@@ -535,18 +520,10 @@
             </div>
 
             <div class="picture picture-apple">
-              <img
-                srcset="/One-Step-Ahead/assets/fruits-bag_mob-19fc5fb2.png 106w, /One-Step-Ahead/assets/apple_172-8b96c16a.png 172w, /One-Step-Ahead/assets/fruits-bag_mob@2x-307847b0.png 212w, /One-Step-Ahead/assets/apple_344-01f18507.png 344w"
-                src="/One-Step-Ahead/assets/fruits-bag_mob-19fc5fb2.png"
-                alt="apple"
-                width="106"
-              />
+              <img class="apple-img" srcset="/One-Step-Ahead/assets/fruits-bag_mob-19fc5fb2.png 1x, /One-Step-Ahead/assets/fruits-bag_mob@2x-307847b0.png 2x" src="/One-Step-Ahead/assets/fruits-bag_mob-19fc5fb2.png"
+                alt="apple" width="229" height="196">
             </div>
-            <input
-              type="checkbox"
-              class="modal-form-choice"
-              name="user_choice"
-            />
+            <input type="checkbox" class="modal-form-choice" name="user_choice">
             <span class="icon"></span>
           </label>
         </div>
@@ -557,18 +534,10 @@
               <p class="modal-under-title">Plant</p>
             </div>
             <div class="picture picture-fruits">
-              <img
-                srcset="/One-Step-Ahead/assets/fruits-plate_mob-318900e2.png 1x, /One-Step-Ahead/assets/fruits-plate_mob@2x-f4ec663c.png 2x"
-                src="/One-Step-Ahead/assets/fruits-plate_mob-318900e2.png"
-                alt="fruits"
-                width="107"
-              />
+              <img class="plate-imaging" srcset="/One-Step-Ahead/assets/fruits-plate_mob-318900e2.png 1x, /One-Step-Ahead/assets/fruits-plate_mob@2x-f4ec663c.png 2x" src="/One-Step-Ahead/assets/fruits-plate_mob-318900e2.png"
+                alt="fruits" width="107">
             </div>
-            <input
-              type="checkbox"
-              class="modal-form-choice"
-              name="user_choice"
-            />
+            <input type="checkbox" class="modal-form-choice" name="user_choice">
             <span class="icon"></span>
           </label>
         </div>
@@ -577,52 +546,28 @@
       <div class="modal-form-field">
         <label class="modal-form-label-box">
           <div>
-            <input
-              class="modal-form-input"
-              type="text"
-              name="user_name"
-              minlength="2"
-              placeholder="Enter full name..."
-              required
-            />
+            <input class="modal-form-input" type="text" name="user_name" minlength="2" placeholder="Enter full name..."
+              required />
           </div>
         </label>
 
         <label class="modal-form-label-box">
           <div>
-            <input
-              class="modal-form-input"
-              type="email"
-              pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-              name="user_email"
-              placeholder="Enter email..."
-              required
-            />
+            <input class="modal-form-input" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+              name="user_email" placeholder="Enter email..." required />
           </div>
         </label>
 
         <label class="modal-form-label-box">
           <div>
-            <input
-              class="modal-form-input"
-              type="tel"
-              inputmode="numeric"
-              pattern="[0-9\s]{13,19}"
-              name="user_phone"
-              placeholder="Enter card.."
-              required
-            />
+            <input class="modal-form-input" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" name="user_phone"
+              placeholder="Enter card.." required />
           </div>
         </label>
 
         <label class="modal-form-text">
-          <textarea
-            class="modal-form-massage"
-            name="user_massage"
-            rows="5"
-            placeholder="Enter comments..."
-          >
-          </textarea>
+          <textarea class="modal-form-massage" name="user_massage" rows="5" placeholder="Enter comments...">
+              </textarea>
         </label>
 
         <button class="order-button" type="submit">Submit</button>

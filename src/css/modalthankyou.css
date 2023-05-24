@@ -22,8 +22,8 @@
     position: absolute;
     top: 20px;
     right: 20px;
-    width: 24px;
-    height: 24px;
+    width: 28px;
+    height: 28px;
     padding: 7px;
     background-color: transparent;
     border: none;
@@ -33,12 +33,6 @@
     align-items: center;
     justify-content: center;
 
-}
-@media screen and (min-width: 768px) {
-  .modal-thank-close {
-     width: 28px;
-    height: 28px;
-  }
 }
 
 .modal-thank-close-icon {
@@ -74,42 +68,48 @@
 
 
 /* Стили для модальных окон */
-
-.modal {
-
+.backdrop {
     position: fixed;
-    width: 335px;
-    height: 426px;
-    padding: 68px 104px 80px 104px;
-    background-color: rgba(224, 63, 94, 1);
-    border-radius: 20px;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 1;
 
+
+    background-color: rgba(46, 47, 66, 0.4);
+    transition: opacity 500ms,
+        visibility 500ms;
+}
+
+
+.backdrop.is-hiddennew {
     opacity: 0;
     visibility: hidden;
+    pointer-events: none;
+}
 
-    top: 50%;
+
+
+.modal {
+    position: absolute;
     left: 50%;
+    top: 50%;
     transform: translate(-50%, -50%);
-    z-index: 30;
-    /* Должен быть выше чем у подложки*/
+    width: 600px;
+    height: 548px;
+
+    border-radius: 4px;
+    background-color: rgba(224, 63, 94, 1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 72px 24px 24px 24px;
+    /* position: fixed;
+
 
     /*  Побочные стили   */
     box-shadow: 0 3px 10px -.5px rgba(0, 0, 0, .2);
     text-align: center;
     transition: 0.3s all;
-}
 
-@media screen and (min-width: 768px) {
-    .modal {
-        width: 600px;
-        height: 545px;
-
-    }
-}
-
-
-.modal.active,
-.overlay.active {
-    opacity: 1;
-    visibility: visible;
 }

@@ -36,7 +36,7 @@
   margin-right: auto;
   margin-top: 117px;
 
-  background-image: url(./img/hero-img/woman_m_335x510@1x.webp);
+  background-image: url(../img/hero-img/woman_m_335x510@1x.webp);
   background-repeat: no-repeat;
   background-position: center;
   background-position: 50% 0;
@@ -52,23 +52,23 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero-main {
-    background-image: url(./img/hero-img/woman_m_670x1020@2x.webp);
+    background-image: url(../img/hero-img/woman_m_670x1020@2x.webp);
   }
 }
 
 .hero-main:before,
 .hero-main:after {
   position: absolute;
-  z-index: 100;
-  top: 50%;
-  left: 50%;
+  z-index: 2;
+  top: 0;
+  left: 0;
   right: 0;
   bottom: 0;
   padding-top: 44px;
 }
 
 .hero-main::before {
-  content: url(./img/hero-img/banana_m_86x72@1x.webp);
+  content: url(../img/hero-img/banana_m_86x72@1x.webp);
   padding-top: 98px;
   padding-left: 0;
   /* transform-origin: 0 0;
@@ -78,21 +78,21 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero-main::before {
-    content: url(./img/hero-img/banana_m_171x144@2x.webp);
+    content: url(../img/hero-img/banana_m_171x144@2x.webp);
     padding-top: 98px;
     padding-left: 0;
   }
 }
 
 .hero-main::after {
-  content: url(./img/hero-img/strawberry_m_64x64@1x.webp);
+  content: url(../img/hero-img/strawberry_m_64x64@1x.webp);
   text-align: right;
 }
 @media (min-device-pixel-ratio: 2),
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero-main::after {
-    content: url(./img/hero-img/strawberry_m_128x128@2x.webp);
+    content: url(../img/hero-img/strawberry_m_128x128@2x.webp);
     padding-top: 98px;
     padding-left: 0;
   }
@@ -100,7 +100,7 @@
 
 @media only screen and (min-width: 768px) {
   .hero-main {
-    background-image: url(./img/hero-img/woman_td_486x742@1x.webp);
+    background-image: url(../img/hero-img/woman_td_486x742@1x.webp);
     padding-top: 742px;
   }
 
@@ -123,7 +123,7 @@
   (min-resolution: 192dpi),
   (min-resolution: 2dppx) {
   .hero-main {
-    content: url(./img/hero-img/main1_972@2x.webp);
+    content: url(../img/hero-img/main1_972@2x.webp);
     padding-top: 742px;
   }
   .hero-main::before {

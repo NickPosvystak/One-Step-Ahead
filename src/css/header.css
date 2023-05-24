@@ -46,6 +46,13 @@
   }
 }
 
+.link-title:hover,
+.link-title:focus {
+  color: var(--third-color);
+
+}
+
+
 
 .description-icon {
   margin-right: 8px;

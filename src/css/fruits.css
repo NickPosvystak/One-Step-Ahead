@@ -178,6 +178,7 @@
     transform: rotate(-14deg);
     background-color: #9DC262;
     border-radius: 50%;
+    transition: background-color 250ms cubic-bezier(.03, .08, 1, .92);
 }
 .fruits-order-button:hover,
 .fruits-order-button:focus{
@@ -199,6 +200,7 @@
     letter-spacing: -0.04em;
     text-transform: uppercase;
     text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+    transition: color 250ms cubic-bezier(.03, .08, 1, .92);
 }
 .fruits-order-button:hover .fruits-order-text-wrapper,
 .fruits-order-button:focus .fruits-order-text-wrapper {
@@ -213,6 +215,7 @@
 .fruits-order-button-icon{
     transform: rotate(14deg);
     fill: var(--second-color);
+    transition: fill 250ms cubic-bezier(.03, .08, 1, .92);
 }
 .fruits-order-button:hover .fruits-order-button-icon,
 .fruits-order-button:focus .fruits-order-button-icon {

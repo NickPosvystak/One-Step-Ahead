@@ -39,6 +39,13 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media only screen and (min-width: 320px) and (max-width: 767px){
+  .modal-container{
+    height: 100%;
+    overflow-y: scroll;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .modal-container {
     width: 704px;
@@ -446,7 +453,7 @@
 }
 
 .modal-form-choice:checked+.icon {
-  background-image: url('./img/icon/check.svg');
+  background-image: url('../img/icon/check.svg');
   background-size: contain;
   background-origin: border-box;
 }

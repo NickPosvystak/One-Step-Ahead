@@ -23,7 +23,7 @@
     <title>On Step Ahead</title>
     
     <script type="module" crossorigin src="/One-Step-Ahead/assets/index-b82c7757.js"></script>
-    <link rel="stylesheet" href="/One-Step-Ahead/assets/index-adb9846d.css">
+    <link rel="stylesheet" href="/One-Step-Ahead/assets/index-65dcaf16.css">
   </head>
   <body>
     <div class="menu-container js-menu-container" id="mobile-menu">
@@ -75,9 +75,9 @@
   <div class="container-header container">
     <nav class="navigation">
       <ul class="nav-list">
-        <li><a href="#howitworks">How It Works</a></li>
-        <li><a href="#fruits">Fruits</a></li>
-        <li><a href="#contacts">Contacts</a></li>
+        <li><a class="link-title" href="#howitworks">How It Works</a></li>
+        <li><a class="link-title" href="#fruits">Fruits</a></li>
+        <li><a class="link-title" href="#contacts">Contacts</a></li>
       </ul>
       <div class="logo">
         <svg class="description-icon" width="16" height="16">
@@ -380,72 +380,7 @@
   </div>
 </section>
 
-
-    <section class="contacts section" id="contacts">
-    <div class="container contacts-m">
-
-        <h3 class="contacts-title"> Fresh Harvest Box has got you covered</h3>
-        <ul class="contacts-fruit-list list">
-            <li class="contacts-fruit-item">
-                <picture class="contacts-fruit-img">
-                    <!-- Desktop screen -->
-
-                    <source media="(min-width: 1280px)" srcset="/One-Step-Ahead/assets/Melon-desk-1x-17c11d22.jpg 1x, /One-Step-Ahead/assets/Melon-desk-2x-a8845b53.jpg 2x" type="image/jpg" />
-                    <!-- Tablet screen -->
-                    <source media="(min-width: 768px)" srcset="/One-Step-Ahead/assets/Melon-tabl-1x-d2158970.jpg 1x, /One-Step-Ahead/assets/Melon-tabl-2x-a9bd1ae3.jpg 2x" type="image/jpg" width="344" height="480" />
-                    <!-- Phone screen -->
-
-                    <source media="(max-width: 767px)" srcset="/One-Step-Ahead/assets/Melon-mob-1x-fc1de711.jpg 1x, /One-Step-Ahead/assets/Melon-mob-2x-5d62467c.jpg 2x" type="image/jpg" width="335" height="476" />
-                    <img src="/One-Step-Ahead/assets/Melon-desk-1x-17c11d22.jpg" alt="Melon" width="792" height="502" loading="lazy"
-                        class="contacts-fruit-img" />
-                </picture>
-
-
-            </li>
-
-            <li class="contacts-fruit-item blub-item">
-                <picture class="contacts-fruit-img">
-                    <!-- Desktop screen -->
-
-                    <source media="(min-width: 1280px)" srcset="/One-Step-Ahead/assets/Blueberry-desk-1x-f38b68bb.jpg 1x, /One-Step-Ahead/assets/Blueberry-desk-2x-368b3c32.jpg 2x" type="image/jpg" />
-                    <!-- Tablet screen -->
-
-                    <source media="(min-width: 768px)" srcset="/One-Step-Ahead/assets/Blueberry-tabl-1x-d0307798.jpg 1x, /One-Step-Ahead/assets/Blueberry-tabl-2x-04013396.jpg 2x" type="image/jpg" width="344" height="480" />
-                    <!-- Phone screen -->
-
-                    <source media="(max-width: 767px)" srcset="
-                                      ./img/ContactsFruit/Blueberry-mob-1x.jpg 1x,
-                                     ./img/ContactsFruit/Blueberry-mob-2x.jpg 2x
-                                    " type="image/jpg" />
-                    <img src="/One-Step-Ahead/assets/Blueberry-desk-1x-f38b68bb.jpg" alt="Melon" width="400" height="502"
-                        loading="lazy" class="contacts-fruit-img" />
-                </picture>
-            </li>
-        </ul>
-
-        <p class="contacts-paragraph">Our boxes are packed with delicious, nutritious fruits and vegetables, perfect for
-            anyone looking to eat
-            healthier or
-            support local farmers. Order your box today and start enjoying the best that nature has to offfer!</p>
-
-        <form class="contact-sub-form">
-            <label class="contact-field">
-
-                <input type="email" name="user-email" placeholder="Enter email..."
-                    pattern="^[\w.-]+@[a-zA-Z_-]+?(?:\.[a-zA-Z]{2,6})+$" required class="contacts-email">
-            </label>
-
-            <button type="submit" class="contacts-sub-btn js-open-modal" data-modal="1">Send</button>
-
-        </form>
-
-
-    </div>
-
-
-</section>
-
-
+    
     <!-- MODAL WINDOW -->
       <div class="backdrop is-hidden" data-modal>
           <div class="modal-container modal-window">
@@ -597,6 +532,71 @@
     </form>
   </div>
 </div>
+
+
+    <section class="contacts section" id="contacts">
+    <div class="container contacts-m">
+
+        <h3 class="contacts-title"> Fresh Harvest Box has got you covered</h3>
+        <ul class="contacts-fruit-list list">
+            <li class="contacts-fruit-item">
+                <picture class="contacts-fruit-img">
+                    <!-- Desktop screen -->
+
+                    <source media="(min-width: 1280px)" srcset="/One-Step-Ahead/assets/Melon-desk-1x-17c11d22.jpg 1x, /One-Step-Ahead/assets/Melon-desk-2x-a8845b53.jpg 2x" type="image/jpg" />
+                    <!-- Tablet screen -->
+                    <source media="(min-width: 768px)" srcset="/One-Step-Ahead/assets/Melon-tabl-1x-d2158970.jpg 1x, /One-Step-Ahead/assets/Melon-tabl-2x-a9bd1ae3.jpg 2x" type="image/jpg" width="344" height="480" />
+                    <!-- Phone screen -->
+
+                    <source media="(max-width: 767px)" srcset="/One-Step-Ahead/assets/Melon-mob-1x-fc1de711.jpg 1x, /One-Step-Ahead/assets/Melon-mob-2x-5d62467c.jpg 2x" type="image/jpg" width="335" height="476" />
+                    <img src="/One-Step-Ahead/assets/Melon-desk-1x-17c11d22.jpg" alt="Melon" width="792" height="502" loading="lazy"
+                        class="contacts-fruit-img" />
+                </picture>
+
+
+            </li>
+
+            <li class="contacts-fruit-item blub-item">
+                <picture class="contacts-fruit-img">
+                    <!-- Desktop screen -->
+
+                    <source media="(min-width: 1280px)" srcset="/One-Step-Ahead/assets/Blueberry-desk-1x-f38b68bb.jpg 1x, /One-Step-Ahead/assets/Blueberry-desk-2x-368b3c32.jpg 2x" type="image/jpg" />
+                    <!-- Tablet screen -->
+
+                    <source media="(min-width: 768px)" srcset="/One-Step-Ahead/assets/Blueberry-tabl-1x-d0307798.jpg 1x, /One-Step-Ahead/assets/Blueberry-tabl-2x-04013396.jpg 2x" type="image/jpg" width="344" height="480" />
+                    <!-- Phone screen -->
+
+                    <source media="(max-width: 767px)" srcset="
+                                      ./img/ContactsFruit/Blueberry-mob-1x.jpg 1x,
+                                     ./img/ContactsFruit/Blueberry-mob-2x.jpg 2x
+                                    " type="image/jpg" />
+                    <img src="/One-Step-Ahead/assets/Blueberry-desk-1x-f38b68bb.jpg" alt="Melon" width="400" height="502"
+                        loading="lazy" class="contacts-fruit-img" />
+                </picture>
+            </li>
+        </ul>
+
+        <p class="contacts-paragraph">Our boxes are packed with delicious, nutritious fruits and vegetables, perfect for
+            anyone looking to eat
+            healthier or
+            support local farmers. Order your box today and start enjoying the best that nature has to offfer!</p>
+
+        <form class="contact-sub-form">
+            <label class="contact-field">
+
+                <input type="email" name="user-email" placeholder="Enter email..."
+                    pattern="^[\w.-]+@[a-zA-Z_-]+?(?:\.[a-zA-Z]{2,6})+$" required class="contacts-email">
+            </label>
+
+            <button type="submit" class="contacts-sub-btn js-open-modal" data-modal="1">Send</button>
+
+        </form>
+
+
+    </div>
+
+
+</section>
 
 
     <footer class="footer-container-organic">

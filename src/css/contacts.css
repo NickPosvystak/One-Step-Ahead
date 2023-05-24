@@ -1,7 +1,8 @@
 .contacts-title {
-    position: relative;
+   position: relative;
     top: 43px;
-  
+    width: 100%;
+    text-transform: uppercase;
     margin-right: auto;
     margin-left: auto;
     text-align: center;

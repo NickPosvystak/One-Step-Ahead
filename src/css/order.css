@@ -58,7 +58,7 @@
 
 @media only screen and (min-width: 768px){
   .modal-window{
-    background-image: url(../img/modal-fruits/background_tab.jpg);
+    background-image: url(./img/modal-fruits/background_tab.jpg);
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: 301px 467px;
@@ -67,7 +67,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
       .modal-window{
-        background-image: url(../img/modal-fruits/background_tab@2x.jpg);
+        background-image: url(./img/modal-fruits/background_tab@2x.jpg);
         background-repeat: no-repeat;
         background-position: right bottom;
         background-size: 301px 467px;
@@ -77,7 +77,7 @@
 
 @media only screen and (min-width: 1280px){
   .modal-window{
-    background-image: url(../img/modal-fruits/modal-img_desk.jpg);
+    background-image: url(./img/modal-fruits/modal-img_desk.jpg);
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: 471px 458px;
@@ -87,7 +87,7 @@
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
   .modal-window{
-    background-image: url(../img/modal-fruits/modal-img_desk@2x.jpg);
+    background-image: url(./img/modal-fruits/modal-img_desk@2x.jpg);
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: 471px 458px;

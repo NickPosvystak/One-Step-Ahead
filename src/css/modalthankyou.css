@@ -22,8 +22,8 @@
     position: absolute;
     top: 20px;
     right: 20px;
-    width: 28px;
-    height: 28px;
+    width: 24px;
+    height: 24px;
     padding: 7px;
     background-color: transparent;
     border: none;
@@ -33,6 +33,12 @@
     align-items: center;
     justify-content: center;
 
+}
+@media screen and (min-width: 768px) {
+  .modal-thank-close {
+     width: 28px;
+    height: 28px;
+  }
 }
 
 .modal-thank-close-icon {

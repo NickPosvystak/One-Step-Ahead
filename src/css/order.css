@@ -446,7 +446,7 @@
 }
 
 .modal-form-choice:checked+.icon {
-  background-image: url('../img/icon/check.svg');
+  background-image: url('./img/icon/check.svg');
   background-size: contain;
   background-origin: border-box;
 }

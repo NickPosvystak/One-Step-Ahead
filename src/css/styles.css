@@ -69,17 +69,17 @@ body {
 }
 
 .section {
-  margin-bottom: 80px;
+  padding-bottom: 80px;
 }
 
 @media screen and (min-width: 768px) {
   .section {
-    margin-bottom: 144px;
+    padding-bottom: 144px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .section {
-    margin-bottom: 150px;
+    padding-bottom: 150px;
   }
 }

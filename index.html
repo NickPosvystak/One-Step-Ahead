@@ -22,7 +22,7 @@
 
     <title>On Step Ahead</title>
     
-    <script type="module" crossorigin src="/One-Step-Ahead/assets/index-6a98843b.js"></script>
+    <script type="module" crossorigin src="/One-Step-Ahead/assets/index-429b042c.js"></script>
     <link rel="stylesheet" href="/One-Step-Ahead/assets/index-28685da3.css">
   </head>
 
@@ -441,7 +441,7 @@
                     pattern="^[\w.-]+@[a-zA-Z_-]+?(?:\.[a-zA-Z]{2,6})+$" required class="contacts-email">
             </label>
 
-            <button type="submit" class="contacts-sub-btn js-open-modal">Send</button>
+            <button type="submit" class="contacts-sub-btn js-open-modal" data-modal="1">Send</button>
 
         </form>
 
@@ -453,7 +453,7 @@
 
 
     <!-- MODAL WINDOW -->
-      <div class="backdrop is-hidden" data-modal>
+      <div class="backdrop is-hidden" data-modal-order>
           <div class="modal-container modal-window">
             <button class="modal-button" type="button" data-modal-close>
               <svg svg id="icon-close" viewBox="0 0 32 32" width="24" height="24">
@@ -734,7 +734,7 @@
 </footer>
 
 
-    <div class="modal overlay js-overlay-modal" data-modal="2">
+    <div class="modal overlay js-overlay-modal" data-modal="1">
   <button class="modal-thank-close js-close-modal" type="button">
     <svg class="modal-thank-close-icon" width="14" height="14">
       <use href="/One-Step-Ahead/assets/symbol-defs-b588b9cb.svg#icon-x"></use>
